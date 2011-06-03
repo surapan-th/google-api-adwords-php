@@ -1,3 +1,17 @@
+2.6.2:
+- Made v201101 the default version.
+- Small documentation fixes.
+- Fixed issue with small reports being interpretted incorrectly. [Issue #58]
+
+2.6.1:
+- Fixed build script to include build.properties for source distributions.
+
+2.6.0:
+- Added support for asyncronous (cross-client) report downloads.
+- Merged with the Ad Exchange Buyer client library.
+- Refactored build system to use properties file.
+- All generated service for a version are now stored in the same folder.
+
 2.5.1:
 - Added support for the ConversionTrackerService and BulkOpportunityService,
   including examples.
