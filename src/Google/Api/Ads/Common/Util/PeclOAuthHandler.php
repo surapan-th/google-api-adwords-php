@@ -38,6 +38,17 @@ require_once 'OAuthHandler.php';
  */
 class PeclOAuthHandler extends OAuthHandler {
   /**
+   * A map from OAuth method names to enum values.
+   * @var array
+   */
+  private static $OAUTH_METHOD_ENUMS = array(
+      'GET' => OAUTH_HTTP_METHOD_GET,
+      'POST' => OAUTH_HTTP_METHOD_POST,
+      'PUT' => OAUTH_HTTP_METHOD_PUT,
+      'HEAD' => OAUTH_HTTP_METHOD_HEAD
+  );
+
+  /**
    * Constructor.
    */
   public function __construct() {}
@@ -93,7 +104,12 @@ class PeclOAuthHandler extends OAuthHandler {
   /**
    * @see OAuthHanlder::GetSignedRequestParameters()
    */
-  public function GetSignedRequestParameters($credentials, $url) {
+  public function GetSignedRequestParameters($credentials, $url,
+      $method = NULL) {
+    if (empty($method)) {
+      $method = 'POST';
+    }
+
     $params = array();
     $params['oauth_consumer_key'] = $credentials['oauth_consumer_key'];
     $params['oauth_token'] = $credentials['oauth_token'];
@@ -102,7 +118,6 @@ class PeclOAuthHandler extends OAuthHandler {
     $params['oauth_nonce'] = uniqid();
     $params['oauth_version'] = '1.0a';
 
-    // This
     $oauth = new OAuth($credentials['oauth_consumer_key'],
         $credentials['oauth_consumer_secret'], OAUTH_SIG_METHOD_HMACSHA1,
         // Must *NOT* use URI auth type due to bug in version 1.1.0.
@@ -115,7 +130,8 @@ class PeclOAuthHandler extends OAuthHandler {
     $oauth->setNonce($params['oauth_nonce']);
     $oauth->setVersion($params['oauth_version']);
 
-    $signature = $oauth->generateSignature(OAUTH_HTTP_METHOD_POST, $url);
+    $signature =
+        $oauth->generateSignature(self::$OAUTH_METHOD_ENUMS[$method], $url);
     $params['oauth_signature'] = $signature;
 
     return $params;

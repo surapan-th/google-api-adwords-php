@@ -109,7 +109,12 @@ class AndySmithOAuthHandler extends OAuthHandler {
   /**
    * @see OAuthHanlder::GetSignedRequestParameters()
    */
-  public function GetSignedRequestParameters($credentials, $url) {
+  public function GetSignedRequestParameters($credentials, $url,
+      $method = NULL) {
+    if (empty($method)) {
+      $method = 'POST';
+    }
+
     $this->DoRequireOnce();
     $consumer = new OAuthConsumer($credentials['oauth_consumer_key'],
         $credentials['oauth_consumer_secret']);
@@ -118,7 +123,7 @@ class AndySmithOAuthHandler extends OAuthHandler {
     $signatureMethod = new OAuthSignatureMethod_HMAC_SHA1();
 
     $params = array('oauth_version' => '1.0a');
-    $request = OAuthRequest::from_consumer_and_token($consumer, $token, 'POST',
+    $request = OAuthRequest::from_consumer_and_token($consumer, $token, $method,
         $url, $params);
     $request->sign_request($signatureMethod, $consumer, $token);
     return $request->get_parameters();

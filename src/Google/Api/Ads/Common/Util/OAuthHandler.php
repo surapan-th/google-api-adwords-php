@@ -91,9 +91,12 @@ abstract class OAuthHandler {
    * @param array $credentials the credentials, including the consumer key,
    *     consumer secret, token, and token secret
    * @param string $url the URL the request will be made against
+   * @param string $method the method of the request that will use the
+   *     parameters, or 'POST' if not specified
    * @return array an array of OAuth parameter names to values
    */
-  public abstract function GetSignedRequestParameters($credentials, $url);
+  public abstract function GetSignedRequestParameters($credentials, $url,
+      $method = NULL);
 
   /**
    * Formats OAuth parameters for use in a URL.

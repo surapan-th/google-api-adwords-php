@@ -69,7 +69,7 @@ class AdWordsSoapClient extends AdsSoapClient {
     if ($oAuthInfo != NULL) {
       $oauthParameters =
           $this->user->GetOAuthHandler()->GetSignedRequestParameters(
-              $oAuthInfo, $location);
+              $oAuthInfo, $location, 'POST');
       $location .= '?' . $this->user->GetOAuthHandler()->FormatParametersForUrl(
           $oauthParameters);
     }
