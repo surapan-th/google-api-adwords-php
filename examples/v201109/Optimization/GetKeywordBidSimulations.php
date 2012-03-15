@@ -4,6 +4,7 @@
  * To get ad groups, run BasicOperation/GetAdGroups.php.
  *
  * Tags: DataService.getCriterionBidLandscape
+ * Restriction: adwords-only
  *
  * Copyright 2011, Google Inc. All Rights Reserved.
  *
