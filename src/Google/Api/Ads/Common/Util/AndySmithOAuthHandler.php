@@ -20,11 +20,11 @@
  * @copyright  2011, Google Inc. All Rights Reserved.
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache License,
  *             Version 2.0
- * @author     Eric Koleda <eric.koleda@google.com>
- * @author     Vincent Tsao <api.vtsao@gmail.com>
+ * @author     Eric Koleda <ekoleda@google.com>
+ * @author     Vincent Tsao <vtsao@google.com>
  */
-require_once 'OAuthHandler.php';
-require_once 'CurlUtils.php';
+require_once 'Google/Api/Ads/Common/Util/CurlUtils.php';
+require_once 'Google/Api/Ads/Common/Util/OAuthHandler.php';
 
 /**
  * An OAuth hanlder that uses the a popular OAuth implementation written by
@@ -162,3 +162,4 @@ class AndySmithOAuthHandler extends OAuthHandler {
         $values['oauth_token_secret']);
   }
 }
+

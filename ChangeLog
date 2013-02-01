@@ -1,3 +1,10 @@
+4.0.1:
+- Added example for Setting a campaign to enhanced
+- Added example for Setting a bid modifier
+
+4.0.0:
+- Correcting user agent.
+
 3.2.3:
 - Bug fix for PHP 5.4.0 to 5.4.4 SOAP flag name change (Issue #81).
 

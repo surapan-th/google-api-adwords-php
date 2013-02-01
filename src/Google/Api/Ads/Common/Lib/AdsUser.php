@@ -20,16 +20,16 @@
  * @copyright  2011, Google Inc. All Rights Reserved.
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache License,
  *             Version 2.0
- * @author     Adam Rogal <api.arogal@gmail.com>
- * @author     Eric Koleda <eric.koleda@google.com>
- * @author     Vincent Tsao <api.vtsao@gmail.com>
+ * @author     Adam Rogal <arogal@google.com>
+ * @author     Eric Koleda <ekoleda@google.com>
+ * @author     Vincent Tsao <vtsao@google.com>
  */
-require_once dirname(__FILE__) . '/../Util/Logger.php';
-require_once dirname(__FILE__) . '/../Util/PeclOAuthHandler.php';
-require_once dirname(__FILE__) . '/../Util/AndySmithOAuthHandler.php';
-require_once dirname(__FILE__) . '/../Util/SimpleOAuth2Handler.php';
-require_once 'SoapClientFactory.php';
-require_once 'ValidationException.php';
+require_once 'Google/Api/Ads/Common/Util/Logger.php';
+require_once 'Google/Api/Ads/Common/Util/PeclOAuthHandler.php';
+require_once 'Google/Api/Ads/Common/Util/AndySmithOAuthHandler.php';
+require_once 'Google/Api/Ads/Common/Util/SimpleOAuth2Handler.php';
+require_once 'Google/Api/Ads/Common/Lib/SoapClientFactory.php';
+require_once 'Google/Api/Ads/Common/Lib/ValidationException.php';
 
 /**
  * User class for all API modules using the Ads API.
@@ -163,7 +163,6 @@ abstract class AdsUser {
     Logger::SetLogLevel(Logger::$REQUEST_INFO_LOG, Logger::$INFO);
   }
 
-
   /**
    * Loads the settings for this client library. If the settings INI file
    * located at <var>$settingsIniPath</var> cannot be loaded, then the
@@ -192,6 +191,7 @@ abstract class AdsUser {
     $libLogDirPath = $this->GetSetting($settingsIni, 'LOGGING',
         'LIB_LOG_DIR_PATH', $defaultLogsDir);
     $relativePath = realpath($logsRelativePathBase . '/' . $libLogDirPath);
+
     if ($pathRelative && $relativePath) {
       $this->logsDirectory = $relativePath;
     } elseif (!$pathRelative && $libLogDirPath) {
@@ -661,3 +661,4 @@ abstract class AdsUser {
    */
   abstract protected function GetOAuth2Scope($server = NULL);
 }
+
