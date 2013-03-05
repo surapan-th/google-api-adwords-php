@@ -125,7 +125,7 @@ class ReportUtils {
    */
   private static function DownloadReportFromUrl($url, $headers, $params,
       $path = NULL) {
-    /* 
+    /*
      * This method should not be static and instantiation of this class should
      * be allowed so we can "inject" CurlUtils, but would break too many things
      * that rely on this method being static.
@@ -182,7 +182,7 @@ class ReportUtils {
              "'%s'. ", $apiError->type, $apiError->trigger,
               $apiError->fieldPath);
         }
-        $exception = new ReportDownloadException($errorMessage, $code);        
+        $exception = new ReportDownloadException($errorMessage, $code);
       } else if (preg_match(self::$ERROR_MESSAGE_REGEX, $snippet, $matches)) {
         $exception = new ReportDownloadException($matches[2], $code);
       } else if (!empty($error)) {
@@ -208,7 +208,7 @@ class ReportUtils {
    * Tries to parse the error response xml from the AdWords API server as an
    * object. This method is used in parsing all error responses when API
    * version >= v201209, and in other versions when apiMode header is mentioned
-   * in the request headers. 
+   * in the request headers.
    *
    * @param String $responseXml the error response xml
    * @return Object the parsed error object, or null if the response cannot
@@ -228,7 +228,7 @@ class ReportUtils {
     }
     return $retval;
   }
-  
+
   /**
    * Generates the URL to use for the download request.
    * @param AdWordsUser $user the AdWordsUser to make the request for
@@ -388,5 +388,240 @@ class ReportDownloadException extends Exception {
       $error = 'Report download failed with status code: ' . $httpCode;
     }
     parent::__construct($error, $httpCode);
+  }
+}
+
+if (!class_exists("ReportDefinition", FALSE)) {
+  /**
+   * Represents a report definition.
+   * @package GoogleApiAdsAdWords
+   * @subpackage Util
+   */
+  class ReportDefinition {
+    /**
+     * @access public
+     * @var integer
+     */
+    public $id;
+
+    /**
+     * @access public
+     * @var Selector
+     */
+    public $selector;
+
+    /**
+     * @access public
+     * @var string
+     */
+    public $reportName;
+
+    /**
+     * @access public
+     * @var tnsReportDefinitionReportType
+     */
+    public $reportType;
+
+    /**
+     * @access public
+     * @var boolean
+     */
+    public $hasAttachment;
+
+    /**
+     * @access public
+     * @var tnsReportDefinitionDateRangeType
+     */
+    public $dateRangeType;
+
+    /**
+     * @access public
+     * @var tnsDownloadFormat
+     */
+    public $downloadFormat;
+
+    /**
+     * @access public
+     * @var string
+     */
+    public $creationTime;
+
+    /**
+     * @access public
+     * @var boolean
+     */
+    public $includeZeroImpressions;
+
+    /**
+     * Gets the namesapce of this class
+     * @return the namespace of this class
+     */
+    public function getNamespace() {
+      return "";
+    }
+
+    /**
+     * Gets the xsi:type name of this class
+     * @return the xsi:type name of this class
+     */
+    public function getXsiTypeName() {
+      return "ReportDefinition";
+    }
+
+    public function __construct($id = NULL, $selector = NULL, $reportName = NULL, $reportType = NULL, $hasAttachment = NULL, $dateRangeType = NULL, $downloadFormat = NULL, $creationTime = NULL, $includeZeroImpressions = NULL) {
+      if(get_parent_class('ReportDefinition')) parent::__construct();
+      $this->id = $id;
+      $this->selector = $selector;
+      $this->reportName = $reportName;
+      $this->reportType = $reportType;
+      $this->hasAttachment = $hasAttachment;
+      $this->dateRangeType = $dateRangeType;
+      $this->downloadFormat = $downloadFormat;
+      $this->creationTime = $creationTime;
+      $this->includeZeroImpressions = $includeZeroImpressions;
+    }
+  }
+}
+
+if (!class_exists("Selector", FALSE)) {
+  /**
+   * A generic selector to specify the type of information to return.
+   * @package GoogleApiAdsAdWords
+   * @subpackage Util
+   */
+  class Selector {
+    /**
+     * @access public
+     * @var string[]
+     */
+    public $fields;
+
+    /**
+     * @access public
+     * @var Predicate[]
+     */
+    public $predicates;
+
+    /**
+     * @access public
+     * @var DateRange
+     */
+    public $dateRange;
+
+    /**
+     * @access public
+     * @var OrderBy[]
+     */
+    public $ordering;
+
+    /**
+     * @access public
+     * @var Paging
+     */
+    public $paging;
+
+    /**
+     * Gets the namesapce of this class
+     * @return the namespace of this class
+     */
+    public function getNamespace() {
+      return "";
+    }
+
+    /**
+     * Gets the xsi:type name of this class
+     * @return the xsi:type name of this class
+     */
+    public function getXsiTypeName() {
+      return "Selector";
+    }
+
+    public function __construct($fields = NULL, $predicates = NULL, $dateRange = NULL, $ordering = NULL, $paging = NULL) {
+      if(get_parent_class('Selector')) parent::__construct();
+      $this->fields = $fields;
+      $this->predicates = $predicates;
+      $this->dateRange = $dateRange;
+      $this->ordering = $ordering;
+      $this->paging = $paging;
+    }
+  }
+}
+
+if (!class_exists("Predicate", FALSE)) {
+  /**
+   * Specifies how an entity (eg. adgroup, campaign, criterion, ad) should be filtered.
+   * @package GoogleApiAdsAdWords
+   * @subpackage Util
+   */
+  class Predicate {
+    /**
+     * @access public
+     * @var string
+     */
+    public $field;
+
+    /**
+     * @access public
+     * @var tnsPredicateOperator
+     */
+    public $operator;
+
+    /**
+     * @access public
+     * @var string[]
+     */
+    public $values;
+
+    /**
+     * Gets the namesapce of this class
+     * @return the namespace of this class
+     */
+    public function getNamespace() {
+      return "";
+    }
+
+    /**
+     * Gets the xsi:type name of this class
+     * @return the xsi:type name of this class
+     */
+    public function getXsiTypeName() {
+      return "Predicate";
+    }
+
+    public function __construct($field = NULL, $operator = NULL, $values = NULL) {
+      if(get_parent_class('Predicate')) parent::__construct();
+      $this->field = $field;
+      $this->operator = $operator;
+      $this->values = $values;
+    }
+  }
+}
+
+if (!class_exists("PredicateOperator", FALSE)) {
+  /**
+   * Defines the valid set of operators.
+   * @package GoogleApiAdsAdWords
+   * @subpackage Util
+   */
+  class PredicateOperator {
+    /**
+     * Gets the namesapce of this class
+     * @return the namespace of this class
+     */
+    public function getNamespace() {
+      return "";
+    }
+
+    /**
+     * Gets the xsi:type name of this class
+     * @return the xsi:type name of this class
+     */
+    public function getXsiTypeName() {
+      return "Predicate.Operator";
+    }
+
+    public function __construct() {
+      if(get_parent_class('PredicateOperator')) parent::__construct();
+    }
   }
 }

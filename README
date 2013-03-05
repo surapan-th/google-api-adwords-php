@@ -1,4 +1,3 @@
-
 AdWords and DoubleClick Ad Exchange Buyer API PHP Client Library
 ================================================================
 
@@ -13,7 +12,7 @@ easy to write PHP clients to programmatically access AdWords and DoubleClick Ad
 Exchange Buyer accounts. All client library classes and utilities are in the
 directory or sub-directory of "src/Google/Api/Ads/AdWords/".
 
-The client library is compatible with all standard PHP 5.2.x and 5.3.x
+The client library is compatible with all standard PHP 5.2.x - 5.4.x
 distributions. The library uses the native SoapClient class
 [http://us3.php.net/manual/en/book.soap.php], which needs to be enabled with the
 --enable-soap flag if building PHP from source. More information about
@@ -137,19 +136,12 @@ accounts using the client library, do the following:
      will be loaded.
 
      $campaignService =
-         $user->getCampaignService('v201206', 'https://adwords.google.com');
+         $user->getCampaignService('v201302', 'https://adwords.google.com');
 
      or
 
      // Defaults to parameters above.
      $campaignService = $user->GetCampaignService();
-
-     or
-
-     // Uses the sandbox environment.
-     $campaignService =
-         $user->GetCampaignService('v201206',
-             'https://adwords-sandbox.google.com');
 
   5) Create data objects and invoke methods on the service class instance. The
      data objects and methods map directly to the data objects and requests for
@@ -159,7 +151,10 @@ accounts using the client library, do the following:
      $campaign = new Campaign();
      $campaign->name = 'Campaign #' . time();
      $campaign->status = 'ACTIVE';
-     $campaign->biddingStrategy = new ManualCPC();
+     $campaign->biddingStrategyConfiguration =
+         new BiddingStrategyConfiguration();
+     $campaign->biddingStrategyConfiguration->biddingStrategyType =
+         'MANUAL_CPC';
      $campaign->budget = new Budget('DAILY', new Money(50000000), 'STANDARD');
 
      $operation = new CampaignOperation();
@@ -180,30 +175,13 @@ from a sub-directory of the "examples/" directory,
   $ php Example.php
 
 
-Running in the sandbox environment
-----------------------------------
+Using test accounts for development
+-----------------------------------
 
-It is recommended that during development of your library, you use the sandbox
-envinroment:
+It is recommended that during development of your library, you use AdWords Test
+Accounts, to find more information about these type of account visit:
 
-  http://code.google.com/apis/adwords/docs/developer/adwords_api_sandbox.html
-
-To run in this enviroment, you can make one of two changes to your library:
-
-  1) Change the default server (DEFAULT_SERVER) in the settings.ini file,
-     located at "src/Google/Api/Ads/AdWords/settings.ini", to
-     "https://adwords-sandbox.google.com" and then instantiate all service
-     clients with no parameters i.e.
-
-     // Defaults to parameters set in the settings INI file.
-     $campaignService = $user->GetCampaignService();
-
-  2) Include the sandbox server in all service client instantiations i.e.
-
-     // Uses the sandbox environment.
-     $campaignService =
-         $user->GetCampaignService('v201206',
-             'https://adwords-sandbox.google.com');
+  https://developers.google.com/adwords/api/docs/test-accounts
 
 
 Authentication Options
@@ -399,7 +377,7 @@ the current Ubuntu distribution - 5.2.4-2ubuntu5.7.
 PHP Compatiblity
 -----------------
 
-The PHP client library supports most 5.2.x and 5.3.x distributions. If you find
+The PHP client library supports most 5.2.x - 5.4.x distributions. If you find
 the library is not compatible with your setup, please let us know here:
 
 http://code.google.com/p/google-api-adwords-php/wiki/PhpCompatibility
@@ -409,7 +387,7 @@ External dependencies
 ---------------------
 
 Run environment:
-  - PHP 5.2.x-5.3.x [http://php.net]
+  - PHP 5.2.x-5.4.x [http://php.net]
   - Required PHP extensions:
     - SoapClient [http://us3.php.net/manual/en/book.soap.php] (--enable-soap)
     - OpenSSL [http://php.net/manual/en/book.openssl.php] (--with-ssl)
@@ -430,15 +408,17 @@ Where do I submit bug reports and feature requests?
 ---------------------------------------------------
 
 Bug reports and feature requests can be submitted at
-http://code.google.com/p/google-api-adwords-php/issues/list.
+  http://code.google.com/p/google-api-adwords-php/issues/list.
 
 Questions can be posted to the AdWords API forum:
-http://groups.google.com/group/adwords-api/
+  http://groups.google.com/group/adwords-api/
 
 Authors:
-  api.arogal@gmail.com (Adam Rogal)
-  eric.koleda@google.com (Eric Koleda)
+  adwordsapi-support@google.com (Vincent Tsao)
+  adwordsapi-support@google.com (Paul Matthews)
+  adwordsapi-support@google.com (Adam Rogal)
+  adwordsapi-support@google.com (Eric Koleda)
 
 Maintainers:
-  api.arogal@gmail.com (Adam Rogal)
-  eric.koleda@google.com (Eric Koleda)
+  adwordsapi-support@google.com (Vincent Tsao)
+  adwordsapi-support@google.com (Paul Matthews)

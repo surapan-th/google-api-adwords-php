@@ -49,14 +49,14 @@ class AdWordsUser extends AdsUser {
   // TODO(api.vtsao): Eventually make all header names constants.
   private static $USER_AGENT_HEADER_NAME = 'userAgent';
 
-  private static $LIB_VERSION = '4.0.0';
+  private static $LIB_VERSION = '4.1.0';
   private static $LIB_NAME = 'AwApi-PHP';
 
   /**
    * The default version that is loaded if the settings INI cannot be loaded.
    * @var string default version of the API
    */
-  private static $DEFAULT_VERSION = 'v201209';
+  private static $DEFAULT_VERSION = 'v201302';
 
   /**
    * The default server that is loaded if the settings INI cannot be loaded.
