@@ -814,7 +814,7 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- * 
+ *
  * <p>The OGNL field path is provided for parsers to identify the request data
  * element that may have caused the error.</p>
  * @package GoogleApiAdsAdWords
@@ -3214,11 +3214,11 @@ class VideoType {
 if (!class_exists("AdGroupAdServiceGet", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Returns a list of AdGroupAds.
- * 
+ *
  * @param serviceSelector The selector specifying the {@link AdGroupAd}s to return.
  * @return The page containing the AdGroupAds that meet the criteria specified by the selector.
  * @throws ApiException when there is at least one error with the request.
@@ -3255,7 +3255,7 @@ class AdGroupAdServiceGet {
 
 if (!class_exists("AdGroupAdServiceGetResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -3293,9 +3293,9 @@ if (!class_exists("AdGroupAdServiceMutate", FALSE)) {
  * <span class="constraint DistinctIds">Elements in this field must have distinct IDs for following {@link Operator}s : SET, REMOVE.</span>
  * <span class="constraint NotEmpty">This field must contain at least one element.</span>
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Applies the list of mutate operations (ie. add, set, remove):
  * <p>Add - Creates a new {@linkplain AdGroupAd ad group ad}. The
  * {@code adGroupId} must
@@ -3350,7 +3350,7 @@ class AdGroupAdServiceMutate {
 
 if (!class_exists("AdGroupAdServiceMutateResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -3385,11 +3385,11 @@ class AdGroupAdServiceMutateResponse {
 if (!class_exists("query", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Returns a list of AdGroupAds based on the query.
- * 
+ *
  * @param query The SQL-like AWQL query string.
  * @return A list of AdGroupAds.
  * @throws ApiException if problems occur while parsing the query or fetching AdGroupAds.
@@ -3426,7 +3426,7 @@ class query {
 
 if (!class_exists("queryResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -3924,7 +3924,7 @@ class DateError extends ApiError {
 if (!class_exists("DeprecatedAd", FALSE)) {
 /**
  * Represents a deprecated ad.
- * 
+ *
  * Deprecated ads can be deleted, but cannot be created.
  * <span class="constraint AdxEnabled">This is disabled for AdX when it is contained within Operators: ADD, SET.</span>
  * @package GoogleApiAdsAdWords
@@ -4367,7 +4367,7 @@ class MediaError extends ApiError {
 if (!class_exists("MobileAd", FALSE)) {
 /**
  * Represents a mobile ad.
- * 
+ *
  * <p>
  * A mobile ad can contain a click-to-call phone number, a link to a website,
  * or both.  You specify which features you want by setting certain fields, as
@@ -4380,7 +4380,7 @@ if (!class_exists("MobileAd", FALSE)) {
  * <a href="//support.google.com/adwords/bin/answer.py?answer=2472720">
  * Create a mobile ad</a>.
  * </p>
- * 
+ *
  * <table summary="" style="clear: none">
  * <tr> <th scope="col"> Click-to-call </th>
  * <th scope="col"> Website       </th>
@@ -4770,10 +4770,10 @@ if (!class_exists("ProductAd", FALSE)) {
  * product data (managed using the Google Merchant Center) that is
  * pulled from the Google base product feed specified in the parent campaign's
  * {@linkplain ProductExtension product extension}.
- * 
+ *
  * <p>Product ads are only available to a limited set of advertisers. If you
  * are not eligible to use product ads, they will not serve.</p>
- * 
+ *
  * <p class="caution"><b>Caution:</b> Product ads do not use {@link #url url} or
  * {@link #displayUrl displayUrl}; setting these fields on a product ad will
  * cause an error.</p>
@@ -5448,37 +5448,37 @@ if (!class_exists("DynamicSearchAd", FALSE)) {
  * destination URL auto-generated at serving time according to domain name
  * specific information provided by {@link DomainInfoExtension} linked at the
  * campaign level.
- * 
+ *
  * <p class="caution">Your account must first be whitelisted for Dynamic Search
  * Ads to use the feature in the API.
  * <a href="//www.google.com/ads/innovations/dynamicsearchads.html">Find out more
  * and sign up for the beta</a>.</p>
- * 
+ *
  * <p>Auto-generated fields: headline and destination URL (may contain an optional
  * tracking URL)</p>
- * 
+ *
  * <p>Required fields: description1, description2, displayUrl</p>
- * 
+ *
  * <p>The url field must contain at least one of the following placeholder tags
  * (URL parameters): {unescapedlpurl}, {escapedlpurl}, {lpurlpath}. If no URL is
  * specified, {unescapedlpurl} will be used as default.</p>
- * 
+ *
  * <p>{unescapedlpurl} can only be used at the beginning of the url field. It
  * will be replaced with the full landing page URL of the displayed ad. Extra query
  * parameters can be added to the end, e.g. "{unescapedlpurl}?lang=en".</p>
- * 
+ *
  * <p>{escapedlpurl} will be replaced with the URL-encoded version of the full
  * landing page URL. This makes it suitable for use as a query parameter
  * value (e.g. "http://www.3rdpartytracker.com/?lp={escapedlpurl}") but
  * not at the beginning of the url field.</p>
- * 
+ *
  * <p>{lpurlpath} will be replaced with the path and query part of the landing
  * page URL and can be added to a different URL, e.g.
  * "http://www.mygoodbusiness.com/tracking/{lpurlpath}".</p>
- * 
+ *
  * <p>There are also special rules that come into play depending on whether the
  * destination URL uses local click tracking or third-party click tracking.<p>
- * 
+ *
  * <p>For more information, see the article <a href="//support.google.com/adwords/bin/answer.py?answer=2549100">Using dynamic tracking URLs</a>.
  * <span class="constraint AdxEnabled">This is disabled for AdX when it is contained within Operators: ADD, SET.</span>
  * <span class="constraint Beta">This is a beta feature.</span>
@@ -5605,13 +5605,13 @@ class Money extends ComparableValue {
 if (!class_exists("PolicyViolationError", FALSE)) {
 /**
  * Represents violations of a single policy by some text in a field.
- * 
+ *
  * Violations of a single policy by the same string in multiple places
  * within a field is reported in one instance of this class and only one
  * exemption needs to be filed.
  * Violations of a single policy by two different strings is reported
  * as two separate instances of this class.
- * 
+ *
  * e.g. If 'ACME' violates 'capitalization' and occurs twice in a text ad it
  * would be represented by one instance. If the ad also contains 'INC' which
  * also violates 'capitalization' it would be represented in a separate
@@ -5818,7 +5818,7 @@ class ApiException extends ApplicationException {
 if (!class_exists("MobileImageAd", FALSE)) {
 /**
  * Represents a mobile image ad.
- * 
+ *
  * <p>For more information, see
  * <a href="//support.google.com/adwords/bin/answer.py?answer=2472720">
  * Create a mobile ad</a>.</p>
@@ -6345,6 +6345,7 @@ class AdGroupAdService extends AdWordsSoapClient {
     "mutateResponse" => "AdGroupAdServiceMutateResponse",
     "DateTime" => "AdWordsDateTime",
     "SoapHeader" => "SoapRequestHeader",
+    "Function" => "FeedFunction",
     "AdError" => "AdError",
     "ApiError" => "ApiError",
     "AdExtensionOverrideStats" => "AdExtensionOverrideStats",
@@ -6491,7 +6492,7 @@ class AdGroupAdService extends AdWordsSoapClient {
    * The endpoint of the service
    * @var string
    */
-  public static $endpoint = "https://adwords-prod-west.qa.adz.google.com/api/adwords/cm/v201302/AdGroupAdService";
+  public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201302/AdGroupAdService";
 
   /**
    * Constructor using wsdl location and options array
@@ -6505,11 +6506,11 @@ class AdGroupAdService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Returns a list of AdGroupAds.
-   * 
+   *
    * @param serviceSelector The selector specifying the {@link AdGroupAd}s to return.
    * @return The page containing the AdGroupAds that meet the criteria specified by the selector.
    * @throws ApiException when there is at least one error with the request.
@@ -6526,9 +6527,9 @@ class AdGroupAdService extends AdWordsSoapClient {
    * <span class="constraint DistinctIds">Elements in this field must have distinct IDs for following {@link Operator}s : SET, REMOVE.</span>
    * <span class="constraint NotEmpty">This field must contain at least one element.</span>
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Applies the list of mutate operations (ie. add, set, remove):
    * <p>Add - Creates a new {@linkplain AdGroupAd ad group ad}. The
    * {@code adGroupId} must
@@ -6560,11 +6561,11 @@ class AdGroupAdService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Returns a list of AdGroupAds based on the query.
-   * 
+   *
    * @param query The SQL-like AWQL query string.
    * @return A list of AdGroupAds.
    * @throws ApiException if problems occur while parsing the query or fetching AdGroupAds.
@@ -6578,4 +6579,3 @@ class AdGroupAdService extends AdWordsSoapClient {
 
 }}
 
-?>

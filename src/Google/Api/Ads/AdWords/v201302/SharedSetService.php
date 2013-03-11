@@ -32,7 +32,7 @@ require_once dirname(__FILE__) . "/../Lib/AdWordsSoapClient.php";
 
 if (!class_exists("DateRange", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -273,7 +273,7 @@ class SharedSet {
 
 if (!class_exists("SoapRequestHeader", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -342,7 +342,7 @@ class SoapRequestHeader {
 
 if (!class_exists("SoapResponseHeader", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -855,7 +855,7 @@ class ApplicationException {
 
 if (!class_exists("AuthenticationErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -882,7 +882,7 @@ class AuthenticationErrorReason {
 
 if (!class_exists("AuthorizationErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -909,7 +909,7 @@ class AuthorizationErrorReason {
 
 if (!class_exists("BetaErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -936,7 +936,7 @@ class BetaErrorReason {
 
 if (!class_exists("ClientTermsErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -963,7 +963,7 @@ class ClientTermsErrorReason {
 
 if (!class_exists("DatabaseErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -990,7 +990,7 @@ class DatabaseErrorReason {
 
 if (!class_exists("DistinctErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1017,7 +1017,7 @@ class DistinctErrorReason {
 
 if (!class_exists("EntityCountLimitExceededReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1044,7 +1044,7 @@ class EntityCountLimitExceededReason {
 
 if (!class_exists("EntityNotFoundReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1071,7 +1071,7 @@ class EntityNotFoundReason {
 
 if (!class_exists("IdErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1098,7 +1098,7 @@ class IdErrorReason {
 
 if (!class_exists("InternalApiErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1125,7 +1125,7 @@ class InternalApiErrorReason {
 
 if (!class_exists("NewEntityCreationErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1152,7 +1152,7 @@ class NewEntityCreationErrorReason {
 
 if (!class_exists("NotEmptyErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1179,7 +1179,7 @@ class NotEmptyErrorReason {
 
 if (!class_exists("NotWhitelistedErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1206,7 +1206,7 @@ class NotWhitelistedErrorReason {
 
 if (!class_exists("NullErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1233,7 +1233,7 @@ class NullErrorReason {
 
 if (!class_exists("OperationAccessDeniedReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1260,7 +1260,7 @@ class OperationAccessDeniedReason {
 
 if (!class_exists("Operator", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1287,7 +1287,7 @@ class Operator {
 
 if (!class_exists("OperatorErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1368,7 +1368,7 @@ class PredicateOperator {
 
 if (!class_exists("QuotaCheckErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1395,7 +1395,7 @@ class QuotaCheckErrorReason {
 
 if (!class_exists("RangeErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1422,7 +1422,7 @@ class RangeErrorReason {
 
 if (!class_exists("RateExceededErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1449,7 +1449,7 @@ class RateExceededErrorReason {
 
 if (!class_exists("ReadOnlyErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1476,7 +1476,7 @@ class ReadOnlyErrorReason {
 
 if (!class_exists("RejectedErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1503,7 +1503,7 @@ class RejectedErrorReason {
 
 if (!class_exists("RequestErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1530,7 +1530,7 @@ class RequestErrorReason {
 
 if (!class_exists("RequiredErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1584,7 +1584,7 @@ class SharedSetStatus {
 
 if (!class_exists("SharedSetErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1665,7 +1665,7 @@ class SizeLimitErrorReason {
 
 if (!class_exists("SortOrder", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1692,7 +1692,7 @@ class SortOrder {
 
 if (!class_exists("StringLengthErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1720,9 +1720,9 @@ class StringLengthErrorReason {
 if (!class_exists("SharedSetServiceGet", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Returns a list of SharedSets based on the given selector.
  * @param selector the selector specifying the query
  * @return a list of SharedSet entities that meet the criterion specified
@@ -1761,7 +1761,7 @@ class SharedSetServiceGet {
 
 if (!class_exists("SharedSetServiceGetResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1798,9 +1798,9 @@ if (!class_exists("SharedSetServiceMutate", FALSE)) {
  * <span class="constraint ContentsNotNull">This field must not contain {@code null} elements.</span>
  * <span class="constraint NotEmpty">This field must contain at least one element.</span>
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Applies the list of mutate operations.
  * @param operations the operations to apply
  * @return the modified CriterionList entities
@@ -1838,7 +1838,7 @@ class SharedSetServiceMutate {
 
 if (!class_exists("SharedSetServiceMutateResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1872,7 +1872,7 @@ class SharedSetServiceMutateResponse {
 
 if (!class_exists("AuthenticationError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1911,7 +1911,7 @@ class AuthenticationError extends ApiError {
 
 if (!class_exists("AuthorizationError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1950,7 +1950,7 @@ class AuthorizationError extends ApiError {
 
 if (!class_exists("BetaError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1989,7 +1989,7 @@ class BetaError extends ApiError {
 
 if (!class_exists("ClientTermsError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2028,7 +2028,7 @@ class ClientTermsError extends ApiError {
 
 if (!class_exists("DistinctError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2067,7 +2067,7 @@ class DistinctError extends ApiError {
 
 if (!class_exists("EntityCountLimitExceeded", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2134,7 +2134,7 @@ class EntityCountLimitExceeded extends ApiError {
 
 if (!class_exists("EntityNotFound", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2173,7 +2173,7 @@ class EntityNotFound extends ApiError {
 
 if (!class_exists("IdError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2212,7 +2212,7 @@ class IdError extends ApiError {
 
 if (!class_exists("InternalApiError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2251,7 +2251,7 @@ class InternalApiError extends ApiError {
 
 if (!class_exists("NewEntityCreationError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2290,7 +2290,7 @@ class NewEntityCreationError extends ApiError {
 
 if (!class_exists("NotEmptyError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2329,7 +2329,7 @@ class NotEmptyError extends ApiError {
 
 if (!class_exists("NotWhitelistedError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2368,7 +2368,7 @@ class NotWhitelistedError extends ApiError {
 
 if (!class_exists("NullError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2407,7 +2407,7 @@ class NullError extends ApiError {
 
 if (!class_exists("OperationAccessDenied", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2446,7 +2446,7 @@ class OperationAccessDenied extends ApiError {
 
 if (!class_exists("OperatorError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2485,7 +2485,7 @@ class OperatorError extends ApiError {
 
 if (!class_exists("PagingError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2524,7 +2524,7 @@ class PagingError extends ApiError {
 
 if (!class_exists("QuotaCheckError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2563,7 +2563,7 @@ class QuotaCheckError extends ApiError {
 
 if (!class_exists("RangeError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2602,7 +2602,7 @@ class RangeError extends ApiError {
 
 if (!class_exists("RateExceededError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2662,7 +2662,7 @@ class RateExceededError extends ApiError {
 
 if (!class_exists("ReadOnlyError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2701,7 +2701,7 @@ class ReadOnlyError extends ApiError {
 
 if (!class_exists("RejectedError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2740,7 +2740,7 @@ class RejectedError extends ApiError {
 
 if (!class_exists("RequestError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2779,7 +2779,7 @@ class RequestError extends ApiError {
 
 if (!class_exists("RequiredError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2818,7 +2818,7 @@ class RequiredError extends ApiError {
 
 if (!class_exists("SharedSetError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2894,7 +2894,7 @@ class SharedSetOperation extends Operation {
 
 if (!class_exists("SharedSetReturnValue", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2930,7 +2930,7 @@ class SharedSetReturnValue extends ListReturnValue {
 
 if (!class_exists("SizeLimitError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2969,7 +2969,7 @@ class SizeLimitError extends ApiError {
 
 if (!class_exists("StringLengthError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -3008,7 +3008,7 @@ class StringLengthError extends ApiError {
 
 if (!class_exists("DatabaseError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -3047,7 +3047,7 @@ class DatabaseError extends ApiError {
 
 if (!class_exists("NullStatsPage", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -3077,7 +3077,7 @@ class NullStatsPage extends Page {
 
 if (!class_exists("ApiException", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -3114,7 +3114,7 @@ class ApiException extends ApplicationException {
 
 if (!class_exists("SharedSetPage", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -3169,6 +3169,7 @@ class SharedSetService extends AdWordsSoapClient {
     "mutateResponse" => "SharedSetServiceMutateResponse",
     "DateTime" => "AdWordsDateTime",
     "SoapHeader" => "SoapRequestHeader",
+    "Function" => "FeedFunction",
     "AuthenticationError" => "AuthenticationError",
     "ApiError" => "ApiError",
     "AuthorizationError" => "AuthorizationError",
@@ -3251,7 +3252,7 @@ class SharedSetService extends AdWordsSoapClient {
    * The endpoint of the service
    * @var string
    */
-  public static $endpoint = "https://adwords-prod-west.qa.adz.google.com/api/adwords/cm/v201302/SharedSetService";
+  public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201302/SharedSetService";
 
   /**
    * Constructor using wsdl location and options array
@@ -3265,9 +3266,9 @@ class SharedSetService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Returns a list of SharedSets based on the given selector.
    * @param selector the selector specifying the query
    * @return a list of SharedSet entities that meet the criterion specified
@@ -3285,9 +3286,9 @@ class SharedSetService extends AdWordsSoapClient {
    * <span class="constraint ContentsNotNull">This field must not contain {@code null} elements.</span>
    * <span class="constraint NotEmpty">This field must contain at least one element.</span>
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Applies the list of mutate operations.
    * @param operations the operations to apply
    * @return the modified CriterionList entities
@@ -3302,4 +3303,3 @@ class SharedSetService extends AdWordsSoapClient {
 
 }}
 
-?>

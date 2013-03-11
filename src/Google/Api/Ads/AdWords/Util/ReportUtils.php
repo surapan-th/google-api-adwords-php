@@ -469,7 +469,6 @@ if (!class_exists("ReportDefinition", FALSE)) {
     }
 
     public function __construct($id = NULL, $selector = NULL, $reportName = NULL, $reportType = NULL, $hasAttachment = NULL, $dateRangeType = NULL, $downloadFormat = NULL, $creationTime = NULL, $includeZeroImpressions = NULL) {
-      if(get_parent_class('ReportDefinition')) parent::__construct();
       $this->id = $id;
       $this->selector = $selector;
       $this->reportName = $reportName;
@@ -537,7 +536,6 @@ if (!class_exists("Selector", FALSE)) {
     }
 
     public function __construct($fields = NULL, $predicates = NULL, $dateRange = NULL, $ordering = NULL, $paging = NULL) {
-      if(get_parent_class('Selector')) parent::__construct();
       $this->fields = $fields;
       $this->predicates = $predicates;
       $this->dateRange = $dateRange;
@@ -589,7 +587,6 @@ if (!class_exists("Predicate", FALSE)) {
     }
 
     public function __construct($field = NULL, $operator = NULL, $values = NULL) {
-      if(get_parent_class('Predicate')) parent::__construct();
       $this->field = $field;
       $this->operator = $operator;
       $this->values = $values;
@@ -620,8 +617,240 @@ if (!class_exists("PredicateOperator", FALSE)) {
       return "Predicate.Operator";
     }
 
-    public function __construct() {
-      if(get_parent_class('PredicateOperator')) parent::__construct();
-    }
+    public function __construct() {}
   }
 }
+
+if (!class_exists("DateRange", FALSE)) {
+/**
+ * Represents a range of dates that has either an upper or a lower bound.
+ * The format for the date is YYYYMMDD.
+ * @package GoogleApiAdsAdWords
+ * @subpackage Util
+ */
+class DateRange {
+  /**
+   * @access public
+   * @var string
+   */
+  public $min;
+
+  /**
+   * @access public
+   * @var string
+   */
+  public $max;
+
+  /**
+   * Gets the namesapce of this class
+   * @return the namespace of this class
+   */
+  public function getNamespace() {
+    return "";
+  }
+
+  /**
+   * Gets the xsi:type name of this class
+   * @return the xsi:type name of this class
+   */
+  public function getXsiTypeName() {
+    return "DateRange";
+  }
+
+  public function __construct($min = NULL, $max = NULL) {
+    $this->min = $min;
+    $this->max = $max;
+  }
+}}
+
+if (!class_exists("OrderBy", FALSE)) {
+/**
+ * Specifies how the resulting information should be sorted.
+ * @package GoogleApiAdsAdWords
+ * @subpackage Util
+ */
+class OrderBy {
+  /**
+   * @access public
+   * @var string
+   */
+  public $field;
+
+  /**
+   * @access public
+   * @var tnsSortOrder
+   */
+  public $sortOrder;
+
+  /**
+   * Gets the namesapce of this class
+   * @return the namespace of this class
+   */
+  public function getNamespace() {
+    return "";
+  }
+
+  /**
+   * Gets the xsi:type name of this class
+   * @return the xsi:type name of this class
+   */
+  public function getXsiTypeName() {
+    return "OrderBy";
+  }
+
+  public function __construct($field = NULL, $sortOrder = NULL) {
+    $this->field = $field;
+    $this->sortOrder = $sortOrder;
+  }
+}}
+
+if (!class_exists("Paging", FALSE)) {
+/**
+ * Specifies the page of results to return in the response. A page is specified
+ * by the result position to start at and the maximum number of results to
+ * return.
+ * @package GoogleApiAdsAdWords
+ * @subpackage Util
+ */
+class Paging {
+  /**
+   * @access public
+   * @var integer
+   */
+  public $startIndex;
+
+  /**
+   * @access public
+   * @var integer
+   */
+  public $numberResults;
+
+  /**
+   * Gets the namesapce of this class
+   * @return the namespace of this class
+   */
+  public function getNamespace() {
+    return "";
+  }
+
+  /**
+   * Gets the xsi:type name of this class
+   * @return the xsi:type name of this class
+   */
+  public function getXsiTypeName() {
+    return "Paging";
+  }
+
+  public function __construct($startIndex = NULL, $numberResults = NULL) {
+    $this->startIndex = $startIndex;
+    $this->numberResults = $numberResults;
+  }
+}}
+
+if (!class_exists("SortOrder", FALSE)) {
+/**
+ * Possible orders of sorting.
+ * @package GoogleApiAdsAdWords
+ * @subpackage Util
+ */
+class SortOrder {
+  /**
+   * Gets the namesapce of this class
+   * @return the namespace of this class
+   */
+  public function getNamespace() {
+    return "";
+  }
+
+  /**
+   * Gets the xsi:type name of this class
+   * @return the xsi:type name of this class
+   */
+  public function getXsiTypeName() {
+    return "SortOrder";
+  }
+
+  public function __construct() {}
+}}
+
+if (!class_exists("ReportDefinitionReportType", FALSE)) {
+/**
+ * Enums for report types.
+ * @package GoogleApiAdsAdWords
+ * @subpackage Util
+ */
+class ReportDefinitionReportType {
+  /**
+   * Gets the namesapce of this class
+   * @return the namespace of this class
+   */
+  public function getNamespace() {
+    return "";
+  }
+
+  /**
+   * Gets the xsi:type name of this class
+   * @return the xsi:type name of this class
+   */
+  public function getXsiTypeName() {
+    return "ReportDefinition.ReportType";
+  }
+
+  public function __construct() {}
+}}
+
+if (!class_exists("ReportDefinitionDateRangeType", FALSE)) {
+/**
+ * Enums for date range of report.
+ * @package GoogleApiAdsAdWords
+ * @subpackage Util
+ */
+class ReportDefinitionDateRangeType {
+  /**
+   * Gets the namesapce of this class
+   * @return the namespace of this class
+   */
+  public function getNamespace() {
+    return "";
+  }
+
+  /**
+   * Gets the xsi:type name of this class
+   * @return the xsi:type name of this class
+   */
+  public function getXsiTypeName() {
+    return "ReportDefinition.DateRangeType";
+  }
+
+  public function __construct() {}
+}}
+
+if (!class_exists("DownloadFormat", FALSE)) {
+/**
+ * Enum class that describes the supported formats for content downloads.
+ * The order mimics the order in which download options are presented in the
+ * legacy report center.
+ * @package GoogleApiAdsAdWords
+ * @subpackage Util
+ */
+class DownloadFormat {
+  /**
+   * Gets the namesapce of this class
+   * @return the namespace of this class
+   */
+  public function getNamespace() {
+    return "";
+  }
+
+  /**
+   * Gets the xsi:type name of this class
+   * @return the xsi:type name of this class
+   */
+  public function getXsiTypeName() {
+    return "DownloadFormat";
+  }
+
+  public function __construct() {
+    if(get_parent_class('DownloadFormat')) parent::__construct();
+  }
+}}

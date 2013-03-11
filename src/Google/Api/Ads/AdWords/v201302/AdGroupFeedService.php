@@ -3459,6 +3459,7 @@ class AdGroupFeedService extends AdWordsSoapClient {
     "mutateResponse" => "AdGroupFeedServiceMutateResponse",
     "DateTime" => "AdWordsDateTime",
     "SoapHeader" => "SoapRequestHeader",
+    "Function" => "FeedFunction",
     "AdGroupFeed" => "AdGroupFeed",
     "AdGroupFeedError" => "AdGroupFeedError",
     "ApiError" => "ApiError",
@@ -3484,7 +3485,6 @@ class AdGroupFeedService extends AdWordsSoapClient {
     "EntityCountLimitExceeded" => "EntityCountLimitExceeded",
     "EntityNotFound" => "EntityNotFound",
     "FeedAttributeOperand" => "FeedAttributeOperand",
-    "Function" => "FeedFunction",
     "FunctionError" => "FunctionError",
     "IdError" => "IdError",
     "InternalApiError" => "InternalApiError",
@@ -3547,7 +3547,7 @@ class AdGroupFeedService extends AdWordsSoapClient {
    * The endpoint of the service
    * @var string
    */
-  public static $endpoint = "https://adwords-prod-west.qa.adz.google.com/api/adwords/cm/v201302/AdGroupFeedService";
+  public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201302/AdGroupFeedService";
 
   /**
    * Constructor using wsdl location and options array
@@ -3600,4 +3600,3 @@ class AdGroupFeedService extends AdWordsSoapClient {
 
 }}
 
-?>

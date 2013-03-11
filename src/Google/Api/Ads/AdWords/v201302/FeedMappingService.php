@@ -727,7 +727,7 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- * 
+ *
  * <p>The OGNL field path is provided for parsers to identify the request data
  * element that may have caused the error.</p>
  * @package GoogleApiAdsAdWords
@@ -1568,11 +1568,11 @@ class StringLengthErrorReason {
 if (!class_exists("FeedMappingServiceGet", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Returns a list of FeedMappings that meet the selector criteria.
- * 
+ *
  * @param selector Determines which FeedMappings to return. If empty all
  * FeedMappings are returned.
  * @return The list of FeedMappings.
@@ -1610,7 +1610,7 @@ class FeedMappingServiceGet {
 
 if (!class_exists("FeedMappingServiceGetResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1648,11 +1648,11 @@ if (!class_exists("FeedMappingServiceMutate", FALSE)) {
  * <span class="constraint NotEmpty">This field must contain at least one element.</span>
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
  * <span class="constraint SupportedOperators">The following {@link Operator}s are supported: ADD, REMOVE.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Add and remove FeedMappings.
- * 
+ *
  * @param operations The operations to apply.
  * @return The resulting FeedMappings.
  * @throws ApiException indicates a problem with the request.
@@ -1689,7 +1689,7 @@ class FeedMappingServiceMutate {
 
 if (!class_exists("FeedMappingServiceMutateResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2763,6 +2763,7 @@ class FeedMappingService extends AdWordsSoapClient {
     "mutateResponse" => "FeedMappingServiceMutateResponse",
     "DateTime" => "AdWordsDateTime",
     "SoapHeader" => "SoapRequestHeader",
+    "Function" => "FeedFunction",
     "AttributeFieldMapping" => "AttributeFieldMapping",
     "AuthenticationError" => "AuthenticationError",
     "ApiError" => "ApiError",
@@ -2833,7 +2834,7 @@ class FeedMappingService extends AdWordsSoapClient {
    * The endpoint of the service
    * @var string
    */
-  public static $endpoint = "https://adwords-prod-west.qa.adz.google.com/api/adwords/cm/v201302/FeedMappingService";
+  public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201302/FeedMappingService";
 
   /**
    * Constructor using wsdl location and options array
@@ -2847,11 +2848,11 @@ class FeedMappingService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Returns a list of FeedMappings that meet the selector criteria.
-   * 
+   *
    * @param selector Determines which FeedMappings to return. If empty all
    * FeedMappings are returned.
    * @return The list of FeedMappings.
@@ -2869,11 +2870,11 @@ class FeedMappingService extends AdWordsSoapClient {
    * <span class="constraint NotEmpty">This field must contain at least one element.</span>
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
    * <span class="constraint SupportedOperators">The following {@link Operator}s are supported: ADD, REMOVE.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Add and remove FeedMappings.
-   * 
+   *
    * @param operations The operations to apply.
    * @return The resulting FeedMappings.
    * @throws ApiException indicates a problem with the request.
@@ -2887,4 +2888,3 @@ class FeedMappingService extends AdWordsSoapClient {
 
 }}
 
-?>

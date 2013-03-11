@@ -314,7 +314,7 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- * 
+ *
  * <p>The OGNL field path is provided for parsers to identify the request data
  * element that may have caused the error.</p>
  * @package GoogleApiAdsAdWords
@@ -1182,11 +1182,11 @@ class StringLengthErrorReason {
 if (!class_exists("getReportFields", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Returns the available report fields for a given report type.
- * 
+ *
  * @param reportType The type of report.
  * @return The list of available report fields. Each
  * {@link ReportDefinitionField} encapsulates the field name, the
@@ -1227,7 +1227,7 @@ class getReportFields {
 
 if (!class_exists("getReportFieldsResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2316,6 +2316,7 @@ class ReportDefinitionService extends AdWordsSoapClient {
     "mutateResponse" => "ReportDefinitionServiceMutateResponse",
     "DateTime" => "AdWordsDateTime",
     "SoapHeader" => "SoapRequestHeader",
+    "Function" => "FeedFunction",
     "AuthenticationError" => "AuthenticationError",
     "ApiError" => "ApiError",
     "AuthorizationError" => "AuthorizationError",
@@ -2381,7 +2382,7 @@ class ReportDefinitionService extends AdWordsSoapClient {
    * The endpoint of the service
    * @var string
    */
-  public static $endpoint = "https://adwords-prod-west.qa.adz.google.com/api/adwords/cm/v201302/ReportDefinitionService";
+  public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201302/ReportDefinitionService";
 
   /**
    * Constructor using wsdl location and options array
@@ -2395,11 +2396,11 @@ class ReportDefinitionService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Returns the available report fields for a given report type.
-   * 
+   *
    * @param reportType The type of report.
    * @return The list of available report fields. Each
    * {@link ReportDefinitionField} encapsulates the field name, the
@@ -2417,4 +2418,3 @@ class ReportDefinitionService extends AdWordsSoapClient {
 
 }}
 
-?>

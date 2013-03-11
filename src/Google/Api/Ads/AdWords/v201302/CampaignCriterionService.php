@@ -110,7 +110,7 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- * 
+ *
  * <p>The OGNL field path is provided for parsers to identify the request data
  * element that may have caused the error.</p>
  * @package GoogleApiAdsAdWords
@@ -2203,12 +2203,12 @@ class Platform extends Criterion {
 if (!class_exists("Polygon", FALSE)) {
 /**
  * Represents a Polygon Criterion.
- * 
+ *
  * A polygon is described by a list of at least three points, where each point is a
  * (<var>latitude</var>, <var>longitude</var>) ordered pair. No point can be more than 400km
  * from the center of the polygon. The points are specified in microdegrees, the precison
  * for the value is 1 second of angle which is equal to 277 microdegrees.<p>
- * 
+ *
  * <p>Please note that Polygons are deprecated. This means that Polygon targets cannot be added
  * through the API, though existing targets can be retrieved and deleted.
  * <p>
@@ -2424,7 +2424,7 @@ class ProductConditionOperand {
 if (!class_exists("Proximity", FALSE)) {
 /**
  * Represents a Proximity Criterion.
- * 
+ *
  * A proximity is an area within a certain radius of a point with the center point being described
  * by a lat/long pair. The caller may also alternatively provide address fields which will be
  * geocoded into a lat/long pair. Note: If a geoPoint value is provided, the address is not
@@ -3403,7 +3403,7 @@ class Webpage extends Criterion {
 if (!class_exists("WebpageCondition", FALSE)) {
 /**
  * Logical expression for targeting webpages of an advertiser's website.
- * 
+ *
  * <p>A condition is defined as {@code operand OP argument}
  * where {@code operand} is one of the values enumerated in
  * {@link WebpageConditionOperand}, and, based on this value,
@@ -3654,7 +3654,7 @@ class CampaignCriterionErrorReason {
 
 if (!class_exists("CampaignCriterionLimitExceededCriteriaLimitType", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -3926,7 +3926,7 @@ class EntityNotFoundReason {
 
 if (!class_exists("GenderGenderType", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -4089,7 +4089,7 @@ class MinuteOfHour {
 
 if (!class_exists("MobileDeviceDeviceType", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -4793,11 +4793,11 @@ class WebpageConditionOperand {
 if (!class_exists("CampaignCriterionServiceGet", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Gets campaign criteria.
- * 
+ *
  * @param serviceSelector The selector specifying the {@link CampaignCriterion}s to return.
  * @return A list of campaign criteria.
  * @throws ApiException when there is at least one error with the request.
@@ -4834,7 +4834,7 @@ class CampaignCriterionServiceGet {
 
 if (!class_exists("CampaignCriterionServiceGetResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -4873,11 +4873,11 @@ if (!class_exists("CampaignCriterionServiceMutate", FALSE)) {
  * <span class="constraint NotEmpty">This field must contain at least one element.</span>
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
  * <span class="constraint SupportedOperators">The following {@link Operator}s are supported: ADD, REMOVE, SET.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Adds, removes or updates campaign criteria.
- * 
+ *
  * @param operations The operations to apply.
  * @return The added campaign criteria (without any optional parts).
  * @throws ApiException when there is at least one error with the request.
@@ -4914,7 +4914,7 @@ class CampaignCriterionServiceMutate {
 
 if (!class_exists("CampaignCriterionServiceMutateResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -4949,11 +4949,11 @@ class CampaignCriterionServiceMutateResponse {
 if (!class_exists("query", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Returns the list of campaign criteria that match the query.
- * 
+ *
  * @param query The SQL-like AWQL query string.
  * @return A list of campaign criteria.
  * @throws ApiException if problems occur while parsing the query or fetching campaign criteria.
@@ -4990,7 +4990,7 @@ class query {
 
 if (!class_exists("queryResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -5477,6 +5477,7 @@ class CampaignCriterionService extends AdWordsSoapClient {
     "mutateResponse" => "CampaignCriterionServiceMutateResponse",
     "DateTime" => "AdWordsDateTime",
     "SoapHeader" => "SoapRequestHeader",
+    "Function" => "FeedFunction",
     "AdSchedule" => "AdSchedule",
     "Criterion" => "Criterion",
     "Address" => "Address",
@@ -5612,7 +5613,7 @@ class CampaignCriterionService extends AdWordsSoapClient {
    * The endpoint of the service
    * @var string
    */
-  public static $endpoint = "https://adwords-prod-west.qa.adz.google.com/api/adwords/cm/v201302/CampaignCriterionService";
+  public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201302/CampaignCriterionService";
 
   /**
    * Constructor using wsdl location and options array
@@ -5626,11 +5627,11 @@ class CampaignCriterionService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Gets campaign criteria.
-   * 
+   *
    * @param serviceSelector The selector specifying the {@link CampaignCriterion}s to return.
    * @return A list of campaign criteria.
    * @throws ApiException when there is at least one error with the request.
@@ -5648,11 +5649,11 @@ class CampaignCriterionService extends AdWordsSoapClient {
    * <span class="constraint NotEmpty">This field must contain at least one element.</span>
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
    * <span class="constraint SupportedOperators">The following {@link Operator}s are supported: ADD, REMOVE, SET.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Adds, removes or updates campaign criteria.
-   * 
+   *
    * @param operations The operations to apply.
    * @return The added campaign criteria (without any optional parts).
    * @throws ApiException when there is at least one error with the request.
@@ -5666,11 +5667,11 @@ class CampaignCriterionService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Returns the list of campaign criteria that match the query.
-   * 
+   *
    * @param query The SQL-like AWQL query string.
    * @return A list of campaign criteria.
    * @throws ApiException if problems occur while parsing the query or fetching campaign criteria.
@@ -5684,4 +5685,3 @@ class CampaignCriterionService extends AdWordsSoapClient {
 
 }}
 
-?>

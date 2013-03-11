@@ -782,7 +782,7 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- * 
+ *
  * <p>The OGNL field path is provided for parsers to identify the request data
  * element that may have caused the error.</p>
  * @package GoogleApiAdsAdWords
@@ -1278,14 +1278,14 @@ class BiddingScheme {
 if (!class_exists("BiddingStrategyConfiguration", FALSE)) {
 /**
  * Encapsulates the information about bids and bidding strategies.
- * 
+ *
  * Bidding Strategy can be set only on campaigns. A bidding strategy can be set
  * on the campaign using the bidding schema
  * {@linkplain BiddingStrategyConfiguration#biddingScheme}
  * or by using the bidding strategy type
  * {@linkplain BiddingStrategyConfiguration#biddingStrategyType}.
  * If the bidding strategy type is used, then schemes are created using default values.
- * 
+ *
  * Bids can be set only on ad groups and ad group criteria. They cannot be set on campaigns.
  * Multiple bids can be set at the same time. Only the bids that apply to the campaign's bidding
  * strategy {@linkplain Campaign#biddingStrategyConfiguration bidding strategy}
@@ -1980,7 +1980,7 @@ class ConversionOptimizerBiddingSchemeBidType {
 
 if (!class_exists("ConversionOptimizerBiddingSchemePricingMode", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2955,12 +2955,12 @@ class StringLengthErrorReason {
 if (!class_exists("AdGroupServiceGet", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Returns a list of all the ad groups specified by the selector
  * from the target customer's account.
- * 
+ *
  * @param serviceSelector The selector specifying the {@link AdGroup}s to return.
  * @return List of adgroups identified by the selector.
  * @throws ApiException when there is at least one error with the request.
@@ -2997,7 +2997,7 @@ class AdGroupServiceGet {
 
 if (!class_exists("AdGroupServiceGetResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -3036,14 +3036,14 @@ if (!class_exists("AdGroupServiceMutate", FALSE)) {
  * <span class="constraint NotEmpty">This field must contain at least one element.</span>
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
  * <span class="constraint SupportedOperators">The following {@link Operator}s are supported: ADD, SET.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Adds, updates, or deletes ad groups.
  * <p class="note"><b>Note:</b> {@link AdGroupOperation} does not support the
  * {@code REMOVE} operator. To delete an ad group, set its
  * {@link AdGroup#status status} to {@code DELETED}.</p>
- * 
+ *
  * @param operations List of unique operations. The same ad group cannot be
  * specified in more than one operation.
  * @return The updated adgroups.
@@ -3080,7 +3080,7 @@ class AdGroupServiceMutate {
 
 if (!class_exists("AdGroupServiceMutateResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -3115,11 +3115,11 @@ class AdGroupServiceMutateResponse {
 if (!class_exists("query", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Returns the list of ad groups that match the query.
- * 
+ *
  * @param query The SQL-like AWQL query string
  * @return A list of adgroups
  * @throws ApiException
@@ -3156,7 +3156,7 @@ class query {
 
 if (!class_exists("queryResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -3511,12 +3511,12 @@ if (!class_exists("ConversionOptimizerBiddingScheme", FALSE)) {
 /**
  * Conversion optimizer bidding strategy helps you maximize your return on investment
  * (ROI) by automatically getting you the most possible conversions for your budget.
- * 
+ *
  * <p>Note that campaigns must meet <a
  * href="//support.google.com/adwords/bin/answer.py?answer=2471188">specific
  * eligibility requirements</a> before they can use the <code>ConversionOptimizer</code>
  * bidding strategy.
- * 
+ *
  * For more information on conversion optimizer, visit the
  * <a href="http://www.google.com/adwords/conversionoptimizer/index.html"
  * >Conversion Optimizer site</a>.
@@ -5472,6 +5472,7 @@ class AdGroupService extends AdWordsSoapClient {
     "mutateResponse" => "AdGroupServiceMutateResponse",
     "DateTime" => "AdWordsDateTime",
     "SoapHeader" => "SoapRequestHeader",
+    "Function" => "FeedFunction",
     "AdGroupServiceError" => "AdGroupServiceError",
     "ApiError" => "ApiError",
     "AdxError" => "AdxError",
@@ -5608,7 +5609,7 @@ class AdGroupService extends AdWordsSoapClient {
    * The endpoint of the service
    * @var string
    */
-  public static $endpoint = "https://adwords-prod-west.qa.adz.google.com/api/adwords/cm/v201302/AdGroupService";
+  public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201302/AdGroupService";
 
   /**
    * Constructor using wsdl location and options array
@@ -5622,12 +5623,12 @@ class AdGroupService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Returns a list of all the ad groups specified by the selector
    * from the target customer's account.
-   * 
+   *
    * @param serviceSelector The selector specifying the {@link AdGroup}s to return.
    * @return List of adgroups identified by the selector.
    * @throws ApiException when there is at least one error with the request.
@@ -5645,14 +5646,14 @@ class AdGroupService extends AdWordsSoapClient {
    * <span class="constraint NotEmpty">This field must contain at least one element.</span>
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
    * <span class="constraint SupportedOperators">The following {@link Operator}s are supported: ADD, SET.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Adds, updates, or deletes ad groups.
    * <p class="note"><b>Note:</b> {@link AdGroupOperation} does not support the
    * {@code REMOVE} operator. To delete an ad group, set its
    * {@link AdGroup#status status} to {@code DELETED}.</p>
-   * 
+   *
    * @param operations List of unique operations. The same ad group cannot be
    * specified in more than one operation.
    * @return The updated adgroups.
@@ -5666,11 +5667,11 @@ class AdGroupService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Returns the list of ad groups that match the query.
-   * 
+   *
    * @param query The SQL-like AWQL query string
    * @return A list of adgroups
    * @throws ApiException
@@ -5684,4 +5685,3 @@ class AdGroupService extends AdWordsSoapClient {
 
 }}
 
-?>

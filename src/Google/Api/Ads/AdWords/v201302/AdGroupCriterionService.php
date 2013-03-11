@@ -559,7 +559,7 @@ class String_StringMapEntry {
 if (!class_exists("WebpageCondition", FALSE)) {
 /**
  * Logical expression for targeting webpages of an advertiser's website.
- * 
+ *
  * <p>A condition is defined as {@code operand OP argument}
  * where {@code operand} is one of the values enumerated in
  * {@link WebpageConditionOperand}, and, based on this value,
@@ -1033,7 +1033,7 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- * 
+ *
  * <p>The OGNL field path is provided for parsers to identify the request data
  * element that may have caused the error.</p>
  * @package GoogleApiAdsAdWords
@@ -1528,14 +1528,14 @@ class BiddingScheme {
 if (!class_exists("BiddingStrategyConfiguration", FALSE)) {
 /**
  * Encapsulates the information about bids and bidding strategies.
- * 
+ *
  * Bidding Strategy can be set only on campaigns. A bidding strategy can be set
  * on the campaign using the bidding schema
  * {@linkplain BiddingStrategyConfiguration#biddingScheme}
  * or by using the bidding strategy type
  * {@linkplain BiddingStrategyConfiguration#biddingStrategyType}.
  * If the bidding strategy type is used, then schemes are created using default values.
- * 
+ *
  * Bids can be set only on ad groups and ad group criteria. They cannot be set on campaigns.
  * Multiple bids can be set at the same time. Only the bids that apply to the campaign's bidding
  * strategy {@linkplain Campaign#biddingStrategyConfiguration bidding strategy}
@@ -2356,7 +2356,7 @@ class ConversionOptimizerBiddingSchemeBidType {
 
 if (!class_exists("ConversionOptimizerBiddingSchemePricingMode", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2708,7 +2708,7 @@ class ForwardCompatibilityErrorReason {
 
 if (!class_exists("GenderGenderType", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -3549,11 +3549,11 @@ class WebpageConditionOperand {
 if (!class_exists("AdGroupCriterionServiceGet", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Gets adgroup criteria.
- * 
+ *
  * @param serviceSelector filters the adgroup criteria to be returned.
  * @return a page (subset) view of the criteria selected
  * @throws ApiException when there is at least one error with the request
@@ -3590,7 +3590,7 @@ class AdGroupCriterionServiceGet {
 
 if (!class_exists("AdGroupCriterionServiceGetResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -3629,11 +3629,11 @@ if (!class_exists("AdGroupCriterionServiceMutate", FALSE)) {
  * <span class="constraint NotEmpty">This field must contain at least one element.</span>
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
  * <span class="constraint SupportedOperators">The following {@link Operator}s are supported: ADD, SET, REMOVE.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Adds, removes or updates adgroup criteria.
- * 
+ *
  * @param operations operations to do
  * during checks on keywords to be added.
  * @return added and updated adgroup criteria (without optional parts)
@@ -3671,7 +3671,7 @@ class AdGroupCriterionServiceMutate {
 
 if (!class_exists("AdGroupCriterionServiceMutateResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -3706,11 +3706,11 @@ class AdGroupCriterionServiceMutateResponse {
 if (!class_exists("query", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Returns the list of AdGroupCriterion that match the query.
- * 
+ *
  * @param query The SQL-like AWQL query string
  * @returns A list of AdGroupCriterion
  * @throws ApiException when the query is invalid or there are errors processing the request.
@@ -3747,7 +3747,7 @@ class query {
 
 if (!class_exists("queryResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -4135,12 +4135,12 @@ if (!class_exists("ConversionOptimizerBiddingScheme", FALSE)) {
 /**
  * Conversion optimizer bidding strategy helps you maximize your return on investment
  * (ROI) by automatically getting you the most possible conversions for your budget.
- * 
+ *
  * <p>Note that campaigns must meet <a
  * href="//support.google.com/adwords/bin/answer.py?answer=2471188">specific
  * eligibility requirements</a> before they can use the <code>ConversionOptimizer</code>
  * bidding strategy.
- * 
+ *
  * For more information on conversion optimizer, visit the
  * <a href="http://www.google.com/adwords/conversionoptimizer/index.html"
  * >Conversion Optimizer site</a>.
@@ -6140,13 +6140,13 @@ class DatabaseError extends ApiError {
 if (!class_exists("PolicyViolationError", FALSE)) {
 /**
  * Represents violations of a single policy by some text in a field.
- * 
+ *
  * Violations of a single policy by the same string in multiple places
  * within a field is reported in one instance of this class and only one
  * exemption needs to be filed.
  * Violations of a single policy by two different strings is reported
  * as two separate instances of this class.
- * 
+ *
  * e.g. If 'ACME' violates 'capitalization' and occurs twice in a text ad it
  * would be represented by one instance. If the ad also contains 'INC' which
  * also violates 'capitalization' it would be represented in a separate
@@ -6861,6 +6861,7 @@ class AdGroupCriterionService extends AdWordsSoapClient {
     "mutateResponse" => "AdGroupCriterionServiceMutateResponse",
     "DateTime" => "AdWordsDateTime",
     "SoapHeader" => "SoapRequestHeader",
+    "Function" => "FeedFunction",
     "AdGroupCriterionError" => "AdGroupCriterionError",
     "ApiError" => "ApiError",
     "AdGroupCriterionLimitExceeded" => "AdGroupCriterionLimitExceeded",
@@ -7029,7 +7030,7 @@ class AdGroupCriterionService extends AdWordsSoapClient {
    * The endpoint of the service
    * @var string
    */
-  public static $endpoint = "https://adwords-prod-west.qa.adz.google.com/api/adwords/cm/v201302/AdGroupCriterionService";
+  public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201302/AdGroupCriterionService";
 
   /**
    * Constructor using wsdl location and options array
@@ -7043,11 +7044,11 @@ class AdGroupCriterionService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Gets adgroup criteria.
-   * 
+   *
    * @param serviceSelector filters the adgroup criteria to be returned.
    * @return a page (subset) view of the criteria selected
    * @throws ApiException when there is at least one error with the request
@@ -7065,11 +7066,11 @@ class AdGroupCriterionService extends AdWordsSoapClient {
    * <span class="constraint NotEmpty">This field must contain at least one element.</span>
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
    * <span class="constraint SupportedOperators">The following {@link Operator}s are supported: ADD, SET, REMOVE.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Adds, removes or updates adgroup criteria.
-   * 
+   *
    * @param operations operations to do
    * during checks on keywords to be added.
    * @return added and updated adgroup criteria (without optional parts)
@@ -7084,11 +7085,11 @@ class AdGroupCriterionService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Returns the list of AdGroupCriterion that match the query.
-   * 
+   *
    * @param query The SQL-like AWQL query string
    * @returns A list of AdGroupCriterion
    * @throws ApiException when the query is invalid or there are errors processing the request.
@@ -7102,4 +7103,3 @@ class AdGroupCriterionService extends AdWordsSoapClient {
 
 }}
 
-?>

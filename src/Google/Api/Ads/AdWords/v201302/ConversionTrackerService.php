@@ -798,7 +798,7 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- * 
+ *
  * <p>The OGNL field path is provided for parsers to identify the request data
  * element that may have caused the error.</p>
  * @package GoogleApiAdsAdWords
@@ -1114,7 +1114,7 @@ class AdWordsConversionTrackerTrackingCodeType {
 
 if (!class_exists("AppConversionAppConversionType", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1901,13 +1901,13 @@ class StringLengthErrorReason {
 if (!class_exists("ConversionTrackerServiceGet", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Returns a list of the conversion trackers that match the selector. The
  * actual objects contained in the page's list of entries will be specific
  * subclasses of the abstract {@link ConversionTracker} class.
- * 
+ *
  * @param serviceSelector The selector specifying the
  * {@link ConversionTracker}s to return.
  * @return List of conversion trackers specified by the selector.
@@ -1946,7 +1946,7 @@ class ConversionTrackerServiceGet {
 
 if (!class_exists("ConversionTrackerServiceGetResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1985,13 +1985,13 @@ if (!class_exists("ConversionTrackerServiceMutate", FALSE)) {
  * <span class="constraint NotEmpty">This field must contain at least one element.</span>
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
  * <span class="constraint SupportedOperators">The following {@link Operator}s are supported: ADD, SET.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Applies the list of mutate operations such as adding or updating conversion trackers.
  * <p class="note"><b>Note:</b> {@link ConversionTrackerOperation} does not support the
  * <code>REMOVE</code> operator.</p>
- * 
+ *
  * @param operations A list of mutate operations to perform.
  * @return The list of the conversion trackers as they appear after mutation,
  * in the same order as they appeared in the list of operations.
@@ -2030,7 +2030,7 @@ class ConversionTrackerServiceMutate {
 
 if (!class_exists("ConversionTrackerServiceMutateResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -3439,6 +3439,7 @@ class ConversionTrackerService extends AdWordsSoapClient {
     "mutateResponse" => "ConversionTrackerServiceMutateResponse",
     "DateTime" => "AdWordsDateTime",
     "SoapHeader" => "SoapRequestHeader",
+    "Function" => "FeedFunction",
     "AdWordsConversionTracker" => "AdWordsConversionTracker",
     "ConversionTracker" => "ConversionTracker",
     "AppConversion" => "AppConversion",
@@ -3524,7 +3525,7 @@ class ConversionTrackerService extends AdWordsSoapClient {
    * The endpoint of the service
    * @var string
    */
-  public static $endpoint = "https://adwords-prod-west.qa.adz.google.com/api/adwords/cm/v201302/ConversionTrackerService";
+  public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201302/ConversionTrackerService";
 
   /**
    * Constructor using wsdl location and options array
@@ -3538,13 +3539,13 @@ class ConversionTrackerService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Returns a list of the conversion trackers that match the selector. The
    * actual objects contained in the page's list of entries will be specific
    * subclasses of the abstract {@link ConversionTracker} class.
-   * 
+   *
    * @param serviceSelector The selector specifying the
    * {@link ConversionTracker}s to return.
    * @return List of conversion trackers specified by the selector.
@@ -3564,13 +3565,13 @@ class ConversionTrackerService extends AdWordsSoapClient {
    * <span class="constraint NotEmpty">This field must contain at least one element.</span>
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
    * <span class="constraint SupportedOperators">The following {@link Operator}s are supported: ADD, SET.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Applies the list of mutate operations such as adding or updating conversion trackers.
    * <p class="note"><b>Note:</b> {@link ConversionTrackerOperation} does not support the
    * <code>REMOVE</code> operator.</p>
-   * 
+   *
    * @param operations A list of mutate operations to perform.
    * @return The list of the conversion trackers as they appear after mutation,
    * in the same order as they appeared in the list of operations.
@@ -3586,4 +3587,3 @@ class ConversionTrackerService extends AdWordsSoapClient {
 
 }}
 
-?>

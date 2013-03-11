@@ -737,7 +737,7 @@ if (!class_exists("FeedFunction", FALSE)) {
  * It is of the form (Operand... Operator Operand...)
  * We can represent expressions like this easily:
  * <pre><code>
- * 
+ *
  * // For example "feed_attribute == 30" can be represented as:
  * FeedId feedId = (FeedId of Feed associated with feed_attribute)
  * FeedAttributeId feedAttributeId = (FeedAttributeId of feed_attribute)
@@ -747,7 +747,7 @@ if (!class_exists("FeedFunction", FALSE)) {
  * function.setOperator(Operator.IN);
  * function.setRhsOperand(
  * Arrays.asList((Operand) new ConstantOperand(30L)));
- * 
+ *
  * // Another example matching on multiple values:
  * "feed_item_id IN (10, 20, 30)" can be represented as:
  *
@@ -3426,6 +3426,7 @@ class CampaignFeedService extends AdWordsSoapClient {
     "mutateResponse" => "CampaignFeedServiceMutateResponse",
     "DateTime" => "AdWordsDateTime",
     "SoapHeader" => "SoapRequestHeader",
+    "Function" => "FeedFunction",
     "ApiError" => "ApiError",
     "ApiException" => "ApiException",
     "ApplicationException" => "ApplicationException",
@@ -3450,7 +3451,6 @@ class CampaignFeedService extends AdWordsSoapClient {
     "EntityCountLimitExceeded" => "EntityCountLimitExceeded",
     "EntityNotFound" => "EntityNotFound",
     "FeedAttributeOperand" => "FeedAttributeOperand",
-    "Function" => "FeedFunction",
     "FunctionError" => "FunctionError",
     "IdError" => "IdError",
     "InternalApiError" => "InternalApiError",
@@ -3512,7 +3512,7 @@ class CampaignFeedService extends AdWordsSoapClient {
    * The endpoint of the service
    * @var string
    */
-  public static $endpoint = "https://adwords-prod-west.qa.adz.google.com/api/adwords/cm/v201302/CampaignFeedService";
+  public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201302/CampaignFeedService";
 
   /**
    * Constructor using wsdl location and options array
@@ -3565,4 +3565,3 @@ class CampaignFeedService extends AdWordsSoapClient {
 
 }}
 
-?>

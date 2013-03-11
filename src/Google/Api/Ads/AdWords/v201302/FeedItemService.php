@@ -32,7 +32,7 @@ require_once dirname(__FILE__) . "/../Lib/AdWordsSoapClient.php";
 
 if (!class_exists("DateRange", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -73,7 +73,7 @@ class DateRange {
 
 if (!class_exists("FeedItemAttributeError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -114,7 +114,7 @@ class FeedItemAttributeError {
 
 if (!class_exists("FeedItemAttributeValue", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -176,7 +176,7 @@ class FeedItemAttributeValue {
 
 if (!class_exists("FeedItemDevicePreference", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -340,7 +340,7 @@ class Predicate {
 
 if (!class_exists("SoapRequestHeader", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -409,7 +409,7 @@ class SoapRequestHeader {
 
 if (!class_exists("SoapResponseHeader", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -478,7 +478,7 @@ class SoapResponseHeader {
 
 if (!class_exists("FeedItemValidationDetail", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1061,7 +1061,7 @@ class Page {
 
 if (!class_exists("AuthenticationErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1088,7 +1088,7 @@ class AuthenticationErrorReason {
 
 if (!class_exists("AuthorizationErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1115,7 +1115,7 @@ class AuthorizationErrorReason {
 
 if (!class_exists("ClientTermsErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1142,7 +1142,7 @@ class ClientTermsErrorReason {
 
 if (!class_exists("DatabaseErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1169,7 +1169,7 @@ class DatabaseErrorReason {
 
 if (!class_exists("DateErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1196,7 +1196,7 @@ class DateErrorReason {
 
 if (!class_exists("DistinctErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1223,7 +1223,7 @@ class DistinctErrorReason {
 
 if (!class_exists("EntityCountLimitExceededReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1250,7 +1250,7 @@ class EntityCountLimitExceededReason {
 
 if (!class_exists("EntityNotFoundReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1304,7 +1304,7 @@ class FeedItemStatus {
 
 if (!class_exists("FeedItemErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1331,7 +1331,7 @@ class FeedItemErrorReason {
 
 if (!class_exists("FeedItemValidationDetailApprovalStatus", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1358,7 +1358,7 @@ class FeedItemValidationDetailApprovalStatus {
 
 if (!class_exists("FeedItemValidationDetailValidationStatus", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1385,7 +1385,7 @@ class FeedItemValidationDetailValidationStatus {
 
 if (!class_exists("IdErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1412,7 +1412,7 @@ class IdErrorReason {
 
 if (!class_exists("InternalApiErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1439,7 +1439,7 @@ class InternalApiErrorReason {
 
 if (!class_exists("NotEmptyErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1466,7 +1466,7 @@ class NotEmptyErrorReason {
 
 if (!class_exists("NotWhitelistedErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1493,7 +1493,7 @@ class NotWhitelistedErrorReason {
 
 if (!class_exists("NullErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1520,7 +1520,7 @@ class NullErrorReason {
 
 if (!class_exists("OperationAccessDeniedReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1547,7 +1547,7 @@ class OperationAccessDeniedReason {
 
 if (!class_exists("Operator", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1601,7 +1601,7 @@ class PredicateOperator {
 
 if (!class_exists("QuotaCheckErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1628,7 +1628,7 @@ class QuotaCheckErrorReason {
 
 if (!class_exists("RangeErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1655,7 +1655,7 @@ class RangeErrorReason {
 
 if (!class_exists("RateExceededErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1682,7 +1682,7 @@ class RateExceededErrorReason {
 
 if (!class_exists("ReadOnlyErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1709,7 +1709,7 @@ class ReadOnlyErrorReason {
 
 if (!class_exists("RequestErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1736,7 +1736,7 @@ class RequestErrorReason {
 
 if (!class_exists("RequiredErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1817,7 +1817,7 @@ class SizeLimitErrorReason {
 
 if (!class_exists("SortOrder", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1844,7 +1844,7 @@ class SortOrder {
 
 if (!class_exists("StringLengthErrorReason", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1872,11 +1872,11 @@ class StringLengthErrorReason {
 if (!class_exists("FeedItemServiceGet", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Returns a list of FeedItems that meet the selector criteria.
- * 
+ *
  * @param selector Determines which FeedItems to return. If empty all
  * FeedItems are returned.
  * @return The list of FeedItems.
@@ -1914,7 +1914,7 @@ class FeedItemServiceGet {
 
 if (!class_exists("FeedItemServiceGetResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1952,11 +1952,11 @@ if (!class_exists("FeedItemServiceMutate", FALSE)) {
  * <span class="constraint DistinctIds">Elements in this field must have distinct IDs for following {@link Operator}s : SET, REMOVE.</span>
  * <span class="constraint NotEmpty">This field must contain at least one element.</span>
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Add, remove, and set FeedItems.
- * 
+ *
  * @param operations The operations to apply.
  * @return The resulting FeedItems.
  * @throws ApiException Indicates a problem with the request.
@@ -1993,7 +1993,7 @@ class FeedItemServiceMutate {
 
 if (!class_exists("FeedItemServiceMutateResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2027,7 +2027,7 @@ class FeedItemServiceMutateResponse {
 
 if (!class_exists("AuthenticationError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2066,7 +2066,7 @@ class AuthenticationError extends ApiError {
 
 if (!class_exists("AuthorizationError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2105,7 +2105,7 @@ class AuthorizationError extends ApiError {
 
 if (!class_exists("ClientTermsError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2144,7 +2144,7 @@ class ClientTermsError extends ApiError {
 
 if (!class_exists("DateError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2183,7 +2183,7 @@ class DateError extends ApiError {
 
 if (!class_exists("DistinctError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2222,7 +2222,7 @@ class DistinctError extends ApiError {
 
 if (!class_exists("EntityCountLimitExceeded", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2289,7 +2289,7 @@ class EntityCountLimitExceeded extends ApiError {
 
 if (!class_exists("EntityNotFound", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2328,7 +2328,7 @@ class EntityNotFound extends ApiError {
 
 if (!class_exists("FeedItemError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2367,7 +2367,7 @@ class FeedItemError extends ApiError {
 
 if (!class_exists("IdError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2406,7 +2406,7 @@ class IdError extends ApiError {
 
 if (!class_exists("InternalApiError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2445,7 +2445,7 @@ class InternalApiError extends ApiError {
 
 if (!class_exists("NotEmptyError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2484,7 +2484,7 @@ class NotEmptyError extends ApiError {
 
 if (!class_exists("NotWhitelistedError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2523,7 +2523,7 @@ class NotWhitelistedError extends ApiError {
 
 if (!class_exists("NullError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2562,7 +2562,7 @@ class NullError extends ApiError {
 
 if (!class_exists("OperationAccessDenied", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2601,7 +2601,7 @@ class OperationAccessDenied extends ApiError {
 
 if (!class_exists("QuotaCheckError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2640,7 +2640,7 @@ class QuotaCheckError extends ApiError {
 
 if (!class_exists("RangeError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2679,7 +2679,7 @@ class RangeError extends ApiError {
 
 if (!class_exists("RateExceededError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2739,7 +2739,7 @@ class RateExceededError extends ApiError {
 
 if (!class_exists("ReadOnlyError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2778,7 +2778,7 @@ class ReadOnlyError extends ApiError {
 
 if (!class_exists("RequestError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2817,7 +2817,7 @@ class RequestError extends ApiError {
 
 if (!class_exists("RequiredError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2856,7 +2856,7 @@ class RequiredError extends ApiError {
 
 if (!class_exists("SelectorError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2895,7 +2895,7 @@ class SelectorError extends ApiError {
 
 if (!class_exists("SizeLimitError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2934,7 +2934,7 @@ class SizeLimitError extends ApiError {
 
 if (!class_exists("StringLengthError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2973,7 +2973,7 @@ class StringLengthError extends ApiError {
 
 if (!class_exists("DatabaseError", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -3012,7 +3012,7 @@ class DatabaseError extends ApiError {
 
 if (!class_exists("ApiException", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -3086,7 +3086,7 @@ class FeedItemOperation extends Operation {
 
 if (!class_exists("FeedItemReturnValue", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -3129,7 +3129,7 @@ class FeedItemReturnValue extends ListReturnValue {
 
 if (!class_exists("NullStatsPage", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -3159,7 +3159,7 @@ class NullStatsPage extends Page {
 
 if (!class_exists("FeedItemPage", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -3214,6 +3214,7 @@ class FeedItemService extends AdWordsSoapClient {
     "mutateResponse" => "FeedItemServiceMutateResponse",
     "DateTime" => "AdWordsDateTime",
     "SoapHeader" => "SoapRequestHeader",
+    "Function" => "FeedFunction",
     "AuthenticationError" => "AuthenticationError",
     "ApiError" => "ApiError",
     "AuthorizationError" => "AuthorizationError",
@@ -3295,7 +3296,7 @@ class FeedItemService extends AdWordsSoapClient {
    * The endpoint of the service
    * @var string
    */
-  public static $endpoint = "https://adwords-prod-west.qa.adz.google.com/api/adwords/cm/v201302/FeedItemService";
+  public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201302/FeedItemService";
 
   /**
    * Constructor using wsdl location and options array
@@ -3309,11 +3310,11 @@ class FeedItemService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Returns a list of FeedItems that meet the selector criteria.
-   * 
+   *
    * @param selector Determines which FeedItems to return. If empty all
    * FeedItems are returned.
    * @return The list of FeedItems.
@@ -3331,11 +3332,11 @@ class FeedItemService extends AdWordsSoapClient {
    * <span class="constraint DistinctIds">Elements in this field must have distinct IDs for following {@link Operator}s : SET, REMOVE.</span>
    * <span class="constraint NotEmpty">This field must contain at least one element.</span>
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Add, remove, and set FeedItems.
-   * 
+   *
    * @param operations The operations to apply.
    * @return The resulting FeedItems.
    * @throws ApiException Indicates a problem with the request.
@@ -3349,4 +3350,3 @@ class FeedItemService extends AdWordsSoapClient {
 
 }}
 
-?>

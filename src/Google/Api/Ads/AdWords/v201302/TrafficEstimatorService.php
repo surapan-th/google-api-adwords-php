@@ -34,12 +34,12 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- * 
+ *
  * <p>The OGNL field path is provided for parsers to identify the request data
  * element that may have caused the error.</p>
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -128,9 +128,9 @@ class ApiError {
 if (!class_exists("ApplicationException", FALSE)) {
 /**
  * Base class for exceptions.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -205,9 +205,9 @@ class ApplicationException {
 if (!class_exists("AuthenticationError", FALSE)) {
 /**
  * Errors returned when Authentication failed.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -248,9 +248,9 @@ class AuthenticationError extends ApiError {
 if (!class_exists("AuthorizationError", FALSE)) {
 /**
  * Errors encountered when trying to authorize a user.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -291,9 +291,9 @@ class AuthorizationError extends ApiError {
 if (!class_exists("ClientTermsError", FALSE)) {
 /**
  * Error due to user not accepting the AdWords terms of service.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -334,9 +334,9 @@ class ClientTermsError extends ApiError {
 if (!class_exists("ComparableValue", FALSE)) {
 /**
  * Comparable types for constructing ranges with.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -405,9 +405,9 @@ if (!class_exists("Criterion", FALSE)) {
 /**
  * Represents a criterion (such as a keyword, placement, or vertical).
  * <span class="constraint AdxEnabled">This is disabled for AdX when it is contained within Operators: ADD, SET.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -489,9 +489,9 @@ class Criterion {
 if (!class_exists("CriterionParameter", FALSE)) {
 /**
  * Base type of criterion parameters.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -559,9 +559,9 @@ class CriterionParameter {
 if (!class_exists("DatabaseError", FALSE)) {
 /**
  * Errors that are thrown due to a database access problem.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -602,9 +602,9 @@ class DatabaseError extends ApiError {
 if (!class_exists("DateError", FALSE)) {
 /**
  * Errors associated with invalid dates and date ranges.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -645,9 +645,9 @@ class DateError extends ApiError {
 if (!class_exists("DistinctError", FALSE)) {
 /**
  * Errors related to distinct ids or content.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -688,9 +688,9 @@ class DistinctError extends ApiError {
 if (!class_exists("EntityAccessDenied", FALSE)) {
 /**
  * Reports permission problems trying to access an entity.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -732,9 +732,9 @@ if (!class_exists("EntityNotFound", FALSE)) {
 /**
  * An id did not correspond to an entity, or it referred to an entity which does not belong to the
  * customer.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -775,9 +775,9 @@ class EntityNotFound extends ApiError {
 if (!class_exists("IdError", FALSE)) {
 /**
  * Errors associated with the ids.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -820,9 +820,9 @@ if (!class_exists("InternalApiError", FALSE)) {
  * Indicates that a server-side error has occured. {@code InternalApiError}s
  * are generally not the result of an invalid request or message sent by the
  * client.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -864,9 +864,9 @@ if (!class_exists("Keyword", FALSE)) {
 /**
  * Represents a keyword.
  * <span class="constraint AdxEnabled">This is disabled for AdX when it is contained within Operators: ADD, SET.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -915,9 +915,9 @@ if (!class_exists("Language", FALSE)) {
  * Represents a Language criterion.
  * <p>A criterion of this type can only be created using an ID. A criterion of this type is only targetable.
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -966,9 +966,9 @@ if (!class_exists("Location", FALSE)) {
  * Represents Location criterion.
  * <p>A criterion of this type can only be created using an ID. A criterion of this type can be either targeted or excluded.
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1033,9 +1033,9 @@ if (!class_exists("MobileAppCategory", FALSE)) {
  * available mobile app categories</a>.
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>
  * <span class="constraint Beta">This is a beta feature.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1084,9 +1084,9 @@ if (!class_exists("MobileApplication", FALSE)) {
  * Represents the mobile application to be targeted.
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>
  * <span class="constraint Beta">This is a beta feature.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1133,9 +1133,9 @@ class MobileApplication extends Criterion {
 if (!class_exists("Money", FALSE)) {
 /**
  * Represents a money amount.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1178,9 +1178,9 @@ if (!class_exists("NetworkSetting", FALSE)) {
  * existing campaigns that have enabled Flexible Reach
  * ({@code TargetRestrictSetting.useAdGroup=true}) will fail with
  * {@code TargetError.CANNOT_MODIFY_CONTENT_CONTEXTUAL}.</p>
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1237,9 +1237,9 @@ class NetworkSetting {
 if (!class_exists("NotEmptyError", FALSE)) {
 /**
  * Errors corresponding with violation of a NOT EMPTY check.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1280,9 +1280,9 @@ class NotEmptyError extends ApiError {
 if (!class_exists("NotWhitelistedError", FALSE)) {
 /**
  * Indicates that the customer is not whitelisted for accessing the API.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1323,9 +1323,9 @@ class NotWhitelistedError extends ApiError {
 if (!class_exists("NullError", FALSE)) {
 /**
  * Errors associated with violation of a NOT NULL check.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1366,9 +1366,9 @@ class NullError extends ApiError {
 if (!class_exists("NumberValue", FALSE)) {
 /**
  * Number value types for constructing number valued ranges.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1399,9 +1399,9 @@ class NumberValue extends ComparableValue {
 if (!class_exists("OperationAccessDenied", FALSE)) {
 /**
  * Operation not permitted due to the invoked service's access policy.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1442,9 +1442,9 @@ class OperationAccessDenied extends ApiError {
 if (!class_exists("OperatorError", FALSE)) {
 /**
  * Errors due to the use of unsupported operations.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1487,9 +1487,9 @@ if (!class_exists("Placement", FALSE)) {
  * A placement used for modifying bids for sites when targeting the content
  * network.
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1533,9 +1533,9 @@ if (!class_exists("Product", FALSE)) {
  * determine the products in a Merchant Center account to be used with the
  * ProductAds in the AdGroup. This criteria is available only to some advertisers.
  * <span class="constraint AdxEnabled">This is disabled for AdX when it is contained within Operators: ADD, SET.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1583,9 +1583,9 @@ if (!class_exists("ProductCondition", FALSE)) {
 /**
  * Conditions to filter the products defined in product feed for targeting.
  * The condition is defined as operand=argument.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1628,9 +1628,9 @@ class ProductCondition {
 if (!class_exists("ProductConditionOperand", FALSE)) {
 /**
  * Attribute for the product condition.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1666,9 +1666,9 @@ class ProductConditionOperand {
 if (!class_exists("QuotaCheckError", FALSE)) {
 /**
  * Encapsulates the errors thrown during developer quota checks.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1709,9 +1709,9 @@ class QuotaCheckError extends ApiError {
 if (!class_exists("RangeError", FALSE)) {
 /**
  * A list of all errors associated with the Range constraint.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1752,9 +1752,9 @@ class RangeError extends ApiError {
 if (!class_exists("RateExceededError", FALSE)) {
 /**
  * Signals that a call failed because a measured rate exceeded.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1816,9 +1816,9 @@ class RateExceededError extends ApiError {
 if (!class_exists("ReadOnlyError", FALSE)) {
 /**
  * Errors from attempting to write to read-only fields.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1859,9 +1859,9 @@ class ReadOnlyError extends ApiError {
 if (!class_exists("RegionCodeError", FALSE)) {
 /**
  * A list of all errors associated with the @RegionCode constraints.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1902,9 +1902,9 @@ class RegionCodeError extends ApiError {
 if (!class_exists("RejectedError", FALSE)) {
 /**
  * The error reason represented by an enum.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1946,9 +1946,9 @@ if (!class_exists("RequestError", FALSE)) {
 /**
  * Encapsulates the generic errors thrown when there's an error with user
  * request.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1989,9 +1989,9 @@ class RequestError extends ApiError {
 if (!class_exists("RequiredError", FALSE)) {
 /**
  * Errors due to missing required field.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2032,9 +2032,9 @@ class RequiredError extends ApiError {
 if (!class_exists("SizeLimitError", FALSE)) {
 /**
  * Indicates that the number of entries in the request or response exceeds the system limit.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2075,9 +2075,9 @@ class SizeLimitError extends ApiError {
 if (!class_exists("SoapRequestHeader", FALSE)) {
 /**
  * Defines the required and optional elements within the header of a SOAP request.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2148,9 +2148,9 @@ class SoapRequestHeader {
 if (!class_exists("SoapResponseHeader", FALSE)) {
 /**
  * Defines the elements within the header of a SOAP response.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2221,9 +2221,9 @@ class SoapResponseHeader {
 if (!class_exists("StringLengthError", FALSE)) {
 /**
  * A list of all errors associated with the @ContentsString constraint.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2264,9 +2264,9 @@ class StringLengthError extends ApiError {
 if (!class_exists("TargetError", FALSE)) {
 /**
  * A list of all the error codes being used by the common targeting package.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2310,9 +2310,9 @@ if (!class_exists("CriterionUserInterest", FALSE)) {
  * Targeting UserInterest is currently in a limited beta.  If you'd like access
  * please speak with your account representative.
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2360,9 +2360,9 @@ if (!class_exists("CriterionUserList", FALSE)) {
 /**
  * UserList - represents a user list that is defined by the advertiser to be targeted.
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2421,9 +2421,9 @@ if (!class_exists("Vertical", FALSE)) {
  * <a href="/adwords/api/docs/appendix/verticals">View the complete list
  * of available vertical categories.</a>
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2480,9 +2480,9 @@ if (!class_exists("Webpage", FALSE)) {
  * website domain name is specified at the campaign level.
  * <span class="constraint AdxEnabled">This is disabled for AdX when it is contained within Operators: ADD, SET.</span>
  * <span class="constraint Beta">This is a beta feature.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2536,14 +2536,14 @@ class Webpage extends Criterion {
 if (!class_exists("WebpageCondition", FALSE)) {
 /**
  * Logical expression for targeting webpages of an advertiser's website.
- * 
+ *
  * <p>A condition is defined as {@code operand OP argument}
  * where {@code operand} is one of the values enumerated in
  * {@link WebpageConditionOperand}, and, based on this value,
  * {@code OP} is either of {@code EQUALS} or {@code CONTAINS}.</p>
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2587,9 +2587,9 @@ if (!class_exists("WebpageParameter", FALSE)) {
 /**
  * Parameter of Webpage criterion, expressed as a list of conditions, or
  * logical expressions, for targeting webpages of an advertiser's website.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2634,9 +2634,9 @@ class WebpageParameter extends CriterionParameter {
 if (!class_exists("AdxErrorReason", FALSE)) {
 /**
  * The reasons for the AdX error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2665,9 +2665,9 @@ class AdxErrorReason {
 if (!class_exists("AuthenticationErrorReason", FALSE)) {
 /**
  * The single reason for the authentication failure.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2696,9 +2696,9 @@ class AuthenticationErrorReason {
 if (!class_exists("AuthorizationErrorReason", FALSE)) {
 /**
  * The reasons for the database error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2728,9 +2728,9 @@ if (!class_exists("ClientTermsErrorReason", FALSE)) {
 /**
  * Enums for the various reasons an error can be thrown as a result of
  * ClientTerms violation.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2759,9 +2759,9 @@ class ClientTermsErrorReason {
 if (!class_exists("CriterionType", FALSE)) {
 /**
  * The types of criteria.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2790,9 +2790,9 @@ class CriterionType {
 if (!class_exists("DatabaseErrorReason", FALSE)) {
 /**
  * The reasons for the database error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2821,9 +2821,9 @@ class DatabaseErrorReason {
 if (!class_exists("DateErrorReason", FALSE)) {
 /**
  * The reasons for the target error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2852,9 +2852,9 @@ class DateErrorReason {
 if (!class_exists("DistinctErrorReason", FALSE)) {
 /**
  * The reasons for the validation error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2883,9 +2883,9 @@ class DistinctErrorReason {
 if (!class_exists("EntityAccessDeniedReason", FALSE)) {
 /**
  * User did not have read access.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2915,9 +2915,9 @@ if (!class_exists("EntityNotFoundReason", FALSE)) {
 /**
  * The specified id refered to an entity which either doesn't exist or is not accessible to the
  * customer. e.g. campaign belongs to another customer.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2946,9 +2946,9 @@ class EntityNotFoundReason {
 if (!class_exists("IdErrorReason", FALSE)) {
 /**
  * The reasons for the target error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2977,9 +2977,9 @@ class IdErrorReason {
 if (!class_exists("InternalApiErrorReason", FALSE)) {
 /**
  * The single reason for the internal API error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -3009,9 +3009,9 @@ if (!class_exists("KeywordMatchType", FALSE)) {
 /**
  * Match type of a keyword. i.e. the way we match a keyword string with
  * search queries.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -3040,9 +3040,9 @@ class KeywordMatchType {
 if (!class_exists("LocationTargetingStatus", FALSE)) {
 /**
  * Enum that represents the different Targeting Status values for a Location criterion.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -3071,9 +3071,9 @@ class LocationTargetingStatus {
 if (!class_exists("NotEmptyErrorReason", FALSE)) {
 /**
  * The reasons for the validation error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -3102,9 +3102,9 @@ class NotEmptyErrorReason {
 if (!class_exists("NotWhitelistedErrorReason", FALSE)) {
 /**
  * The single reason for the whitelist error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -3133,9 +3133,9 @@ class NotWhitelistedErrorReason {
 if (!class_exists("NullErrorReason", FALSE)) {
 /**
  * The reasons for the validation error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -3164,9 +3164,9 @@ class NullErrorReason {
 if (!class_exists("OperationAccessDeniedReason", FALSE)) {
 /**
  * The reasons for the operation access error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -3195,9 +3195,9 @@ class OperationAccessDeniedReason {
 if (!class_exists("OperatorErrorReason", FALSE)) {
 /**
  * The reasons for the validation error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -3227,9 +3227,9 @@ if (!class_exists("QuotaCheckErrorReason", FALSE)) {
 /**
  * Enums for all the reasons an error can be thrown to the user during
  * billing quota checks.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -3258,9 +3258,9 @@ class QuotaCheckErrorReason {
 if (!class_exists("RangeErrorReason", FALSE)) {
 /**
  * The reasons for the target error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -3289,9 +3289,9 @@ class RangeErrorReason {
 if (!class_exists("RateExceededErrorReason", FALSE)) {
 /**
  * The reason for the rate exceeded error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -3320,9 +3320,9 @@ class RateExceededErrorReason {
 if (!class_exists("ReadOnlyErrorReason", FALSE)) {
 /**
  * The reasons for the target error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -3351,9 +3351,9 @@ class ReadOnlyErrorReason {
 if (!class_exists("RegionCodeErrorReason", FALSE)) {
 /**
  * The reasons for the validation error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -3382,9 +3382,9 @@ class RegionCodeErrorReason {
 if (!class_exists("RejectedErrorReason", FALSE)) {
 /**
  * The reasons for the target error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -3413,9 +3413,9 @@ class RejectedErrorReason {
 if (!class_exists("RequestErrorReason", FALSE)) {
 /**
  * Error reason is unknown.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -3444,9 +3444,9 @@ class RequestErrorReason {
 if (!class_exists("RequiredErrorReason", FALSE)) {
 /**
  * The reasons for the target error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -3475,9 +3475,9 @@ class RequiredErrorReason {
 if (!class_exists("SizeLimitErrorReason", FALSE)) {
 /**
  * The reasons for Ad Scheduling errors.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -3506,9 +3506,9 @@ class SizeLimitErrorReason {
 if (!class_exists("StringLengthErrorReason", FALSE)) {
 /**
  * The reasons for the target error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -3537,9 +3537,9 @@ class StringLengthErrorReason {
 if (!class_exists("TargetErrorReason", FALSE)) {
 /**
  * The reasons for the target error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -3568,9 +3568,9 @@ class TargetErrorReason {
 if (!class_exists("CriterionUserListMembershipStatus", FALSE)) {
 /**
  * Membership status of the user list.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -3599,9 +3599,9 @@ class CriterionUserListMembershipStatus {
 if (!class_exists("WebpageConditionOperand", FALSE)) {
 /**
  * Operand value of {@link WebpageCondition}.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -4270,11 +4270,11 @@ class TrafficEstimatorErrorReason {
 if (!class_exists("TrafficEstimatorServiceGet", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Returns traffic estimates for specified criteria.
- * 
+ *
  * @param selector Campaigns, ad groups and keywords for which traffic
  * should be estimated.
  * @return Traffic estimation results.
@@ -4312,7 +4312,7 @@ class TrafficEstimatorServiceGet {
 
 if (!class_exists("TrafficEstimatorServiceGetResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -4347,9 +4347,9 @@ class TrafficEstimatorServiceGetResponse {
 if (!class_exists("AdxError", FALSE)) {
 /**
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -4390,9 +4390,9 @@ class AdxError extends ApiError {
 if (!class_exists("ApiException", FALSE)) {
 /**
  * Exception class for holding a list of service errors.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -4431,9 +4431,9 @@ class ApiException extends ApplicationException {
 if (!class_exists("DoubleValue", FALSE)) {
 /**
  * Number value type for constructing double valued ranges.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -4471,9 +4471,9 @@ class DoubleValue extends NumberValue {
 if (!class_exists("LongValue", FALSE)) {
 /**
  * Number value type for constructing long valued ranges.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -4556,12 +4556,12 @@ if (!class_exists("AdGroupEstimateRequest", FALSE)) {
  * Represents an ad group that will be estimated. Ad groups may be all
  * new or all existing, or a mixture of new and existing. Only existing
  * campaigns can contain estimates for existing ad groups.<p>
- * 
+ *
  * <p>To make a keyword estimates request in which estimates do not consider
  * existing account information (e.g. historical ad group performance), set both
  * {@link #adGroupId} and the enclosing {@link CampaignEstimateRequest}'s
  * {@code campaignId} to {@code null}.
- * 
+ *
  * <p>For more details on usage, refer to document at
  * {@link CampaignEstimateRequest}.
  * @package GoogleApiAdsAdWords
@@ -4657,18 +4657,18 @@ class CampaignEstimate extends Estimate {
 if (!class_exists("CampaignEstimateRequest", FALSE)) {
 /**
  * Represents a campaign that will be estimated.<p>
- * 
+ *
  * Returns traffic estimates for the requested set of campaigns.
  * The campaigns can be all new or all existing, or a mixture of
  * new and existing. Only existing campaigns may contain estimates for existing
  * ad groups.<p>
- * 
+ *
  * For existing campaigns, the campaign and optionally the ad group will be
  * used as context to produce more accurate estimates. Traffic estimates may
  * only be requested on keywords, so regardless of whether campaign and ad group
  * IDs are provided or left blank, at least one keyword is required to estimate
  * traffic.<p>
- * 
+ *
  * To make a keyword estimates request in which estimates do not consider
  * existing account information (e.g. historical ad group performance), set
  * {@link #campaignId} to {@code null}.
@@ -4753,6 +4753,7 @@ class TrafficEstimatorService extends AdWordsSoapClient {
     "mutateResponse" => "TrafficEstimatorServiceMutateResponse",
     "DateTime" => "AdWordsDateTime",
     "SoapHeader" => "SoapRequestHeader",
+    "Function" => "FeedFunction",
     "AdxError" => "AdxError",
     "ApiError" => "ApiError",
     "ApiException" => "ApiException",
@@ -4864,7 +4865,7 @@ class TrafficEstimatorService extends AdWordsSoapClient {
    * The endpoint of the service
    * @var string
    */
-  public static $endpoint = "https://adwords-prod-west.qa.adz.google.com/api/adwords/o/v201302/TrafficEstimatorService";
+  public static $endpoint = "https://adwords.google.com/api/adwords/o/v201302/TrafficEstimatorService";
 
   /**
    * Constructor using wsdl location and options array
@@ -4878,11 +4879,11 @@ class TrafficEstimatorService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Returns traffic estimates for specified criteria.
-   * 
+   *
    * @param selector Campaigns, ad groups and keywords for which traffic
    * should be estimated.
    * @return Traffic estimation results.
@@ -4897,4 +4898,3 @@ class TrafficEstimatorService extends AdWordsSoapClient {
 
 }}
 
-?>

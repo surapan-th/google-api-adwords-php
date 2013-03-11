@@ -220,9 +220,9 @@ if (!class_exists("ApiError", FALSE)) {
  * Indicates that this instance is a subtype of ApiError.
  * Although this field is returned in the response, it is ignored on input
  * and cannot be selected. Specify xsi:type instead.
- * 
- * 
- * 
+ *
+ *
+ *
  * Indicates that this instance is a subtype of ApiError.
  * Although this field is returned in the response, it is ignored on input
  * and cannot be selected. Specify xsi:type instead.
@@ -315,9 +315,9 @@ if (!class_exists("ApplicationException", FALSE)) {
  * Indicates that this instance is a subtype of ApplicationException.
  * Although this field is returned in the response, it is ignored on input
  * and cannot be selected. Specify xsi:type instead.
- * 
- * 
- * 
+ *
+ *
+ *
  * Indicates that this instance is a subtype of ApiError.
  * Although this field is returned in the response, it is ignored on input
  * and cannot be selected. Specify xsi:type instead.
@@ -858,9 +858,9 @@ class RequiredErrorReason {
 if (!class_exists("SizeLimitErrorReason", FALSE)) {
 /**
  * <span class="constraint Rejected">Used for return value only. An enumeration could not be processed, typically due to incompatibility with your WSDL version.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Indicates that this instance is a subtype of ApiError.
  * Although this field is returned in the response, it is ignored on input
  * and cannot be selected. Specify xsi:type instead.
@@ -1196,7 +1196,7 @@ if (!class_exists("ChangeStatus", FALSE)) {
  * An enum used to classify the types of changes that have been made to
  * an adgroup/campaign during a specified date range.  This only refers
  * to the field of the entity itself, and not its children.
- * 
+ *
  * For example, if an AdGroup name changed, this status would be FIELDS_CHANGED,
  * but if only bids on keywords belonging an AdGroup were changed this
  * status would be FIELDS_UNCHANGED.
@@ -1255,11 +1255,11 @@ class CustomerSyncErrorReason {
 if (!class_exists("CustomerSyncServiceGet", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Returns information about changed entities inside a customer's account.
- * 
+ *
  * @param selector Specifies the filter for selecting changehistory events for a customer.
  * @return A Customer->Campaign->AdGroup hierarchy containing information about the objects
  * changed at each level.  All Campaigns that are requested in the selector will be returned,
@@ -1297,7 +1297,7 @@ class CustomerSyncServiceGet {
 
 if (!class_exists("CustomerSyncServiceGetResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2147,6 +2147,7 @@ class CustomerSyncService extends AdWordsSoapClient {
     "mutateResponse" => "CustomerSyncServiceMutateResponse",
     "DateTime" => "AdWordsDateTime",
     "SoapHeader" => "SoapRequestHeader",
+    "Function" => "FeedFunction",
     "AuthenticationError" => "AuthenticationError",
     "ApiError" => "ApiError",
     "AuthorizationError" => "AuthorizationError",
@@ -2201,7 +2202,7 @@ class CustomerSyncService extends AdWordsSoapClient {
    * The endpoint of the service
    * @var string
    */
-  public static $endpoint = "https://adwords-prod-west.qa.adz.google.com/api/adwords/ch/v201302/CustomerSyncService";
+  public static $endpoint = "https://adwords.google.com/api/adwords/ch/v201302/CustomerSyncService";
 
   /**
    * Constructor using wsdl location and options array
@@ -2215,11 +2216,11 @@ class CustomerSyncService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Returns information about changed entities inside a customer's account.
-   * 
+   *
    * @param selector Specifies the filter for selecting changehistory events for a customer.
    * @return A Customer->Campaign->AdGroup hierarchy containing information about the objects
    * changed at each level.  All Campaigns that are requested in the selector will be returned,
@@ -2234,4 +2235,3 @@ class CustomerSyncService extends AdWordsSoapClient {
 
 }}
 
-?>

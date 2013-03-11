@@ -190,7 +190,7 @@ class LocationOverrideInfo {
 
 if (!class_exists("OAuthInfo", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -670,7 +670,7 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- * 
+ *
  * <p>The OGNL field path is provided for parsers to identify the request data
  * element that may have caused the error.</p>
  * @package GoogleApiAdsAdWords
@@ -2237,7 +2237,7 @@ class AdExtensionOverrideServiceGet {
 
 if (!class_exists("AdExtensionOverrideServiceGetResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2276,11 +2276,11 @@ if (!class_exists("AdExtensionOverrideServiceMutate", FALSE)) {
  * <span class="constraint NotEmpty">This field must contain at least one element.</span>
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
  * <span class="constraint SupportedOperators">The following {@link Operator}s are supported: ADD, REMOVE.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Applies the list of mutate operations.
- * 
+ *
  * <p>Conditions for adding an ad-level AdExtension override using an AdExtension
  * under the Ad's campaign:</p>
  * <ol>
@@ -2292,7 +2292,7 @@ if (!class_exists("AdExtensionOverrideServiceMutate", FALSE)) {
  * no override info can be specified (i.e. the override info will inherit from
  * the previous override info).</li>
  * </ol>
- * 
+ *
  * @param operations The operations to apply. The same ad extension override
  * cannot be specified in more than one operation.
  * @return The applied ad extension overrides.
@@ -2329,7 +2329,7 @@ class AdExtensionOverrideServiceMutate {
 
 if (!class_exists("AdExtensionOverrideServiceMutateResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2766,9 +2766,9 @@ if (!class_exists("InAppLinkExtension", FALSE)) {
  * <p>This extension is useful for advertisers who wish to provide users with a
  * link that points to the advertiser's mobile application in addition to their
  * website.
- * 
+ *
  * <p>It is also known as Mobile App Extension.
- * 
+ *
  * <p>The API allows one InAppLinkExtension per {@code AppStore} per campaign.
  * Only the extension for a given {@code AppStore} will render on the device
  * relevant to that {@code AppStore} (e.g. iPhones for {@code AppStore.ITUNES}
@@ -2873,7 +2873,7 @@ class InternalApiError extends ApiError {
 if (!class_exists("MobileExtension", FALSE)) {
 /**
  * Represents a phone extension.
- * 
+ *
  * <p>This type of ad extension attaches a phone number
  * to a text ad, which lets customers call the advertiser directly from the ad.
  * Phone extensions will appear as clickable phone numbers beneath the main text ad,
@@ -4019,6 +4019,7 @@ class AdExtensionOverrideService extends AdWordsSoapClient {
     "mutateResponse" => "AdExtensionOverrideServiceMutateResponse",
     "DateTime" => "AdWordsDateTime",
     "SoapHeader" => "SoapRequestHeader",
+    "Function" => "FeedFunction",
     "AdExtensionOverrideError" => "AdExtensionOverrideError",
     "ApiError" => "ApiError",
     "AdExtensionOverrideStats" => "AdExtensionOverrideStats",
@@ -4113,7 +4114,7 @@ class AdExtensionOverrideService extends AdWordsSoapClient {
    * The endpoint of the service
    * @var string
    */
-  public static $endpoint = "https://adwords-prod-west.qa.adz.google.com/api/adwords/cm/v201302/AdExtensionOverrideService";
+  public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201302/AdExtensionOverrideService";
 
   /**
    * Constructor using wsdl location and options array
@@ -4145,11 +4146,11 @@ class AdExtensionOverrideService extends AdWordsSoapClient {
    * <span class="constraint NotEmpty">This field must contain at least one element.</span>
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
    * <span class="constraint SupportedOperators">The following {@link Operator}s are supported: ADD, REMOVE.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Applies the list of mutate operations.
-   * 
+   *
    * <p>Conditions for adding an ad-level AdExtension override using an AdExtension
    * under the Ad's campaign:</p>
    * <ol>
@@ -4161,7 +4162,7 @@ class AdExtensionOverrideService extends AdWordsSoapClient {
    * no override info can be specified (i.e. the override info will inherit from
    * the previous override info).</li>
    * </ol>
-   * 
+   *
    * @param operations The operations to apply. The same ad extension override
    * cannot be specified in more than one operation.
    * @return The applied ad extension overrides.
@@ -4175,4 +4176,3 @@ class AdExtensionOverrideService extends AdWordsSoapClient {
 
 }}
 
-?>

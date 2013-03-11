@@ -34,7 +34,7 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- * 
+ *
  * <p>The OGNL field path is provided for parsers to identify the request data
  * element that may have caused the error.</p>
  * @package GoogleApiAdsAdWords
@@ -2909,11 +2909,11 @@ class UserListMembershipStatus {
 if (!class_exists("UserListServiceGet", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Returns the list of user lists that meet the selector criteria.
- * 
+ *
  * @param serviceSelector The selector specifying the {@link UserList}s to return.
  * @return A list of UserList entities which meet the selector criteria.
  * @throws ApiException if problems occurred while fetching UserList information.
@@ -2950,7 +2950,7 @@ class UserListServiceGet {
 
 if (!class_exists("UserListServiceGetResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -2989,11 +2989,11 @@ if (!class_exists("UserListServiceMutate", FALSE)) {
  * <span class="constraint NotEmpty">This field must contain at least one element.</span>
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
  * <span class="constraint SupportedOperators">The following {@link Operator}s are supported: ADD, SET.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Adds and updates user lists.
- * 
+ *
  * <p class="note"><b>Note:</b> {@link UserListOperation} does not support the
  * <code>REMOVE</code> operator. To disable a user list, set its
  * {@link UserListMembershipStatus} to <code>CLOSED</code>.</p>
@@ -3032,7 +3032,7 @@ class UserListServiceMutate {
 
 if (!class_exists("UserListServiceMutateResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -3193,7 +3193,7 @@ class LogicalUserList extends UserList {
 if (!class_exists("RemarketingUserList", FALSE)) {
 /**
  * User list targeting as a collection of conversion types.
- * 
+ *
  * {@link RemarketingUserList} can be created in the following ways :
  * <ul>
  * <li> Using a single conversion type name: The service will create a new {@link ConversionType}
@@ -3269,6 +3269,7 @@ class UserListService extends AdWordsSoapClient {
     "mutateResponse" => "UserListServiceMutateResponse",
     "DateTime" => "AdWordsDateTime",
     "SoapHeader" => "SoapRequestHeader",
+    "Function" => "FeedFunction",
     "ApiError" => "ApiError",
     "ApiException" => "ApiException",
     "ApplicationException" => "ApplicationException",
@@ -3350,7 +3351,7 @@ class UserListService extends AdWordsSoapClient {
    * The endpoint of the service
    * @var string
    */
-  public static $endpoint = "https://adwords-prod-west.qa.adz.google.com/api/adwords/cm/v201302/UserListService";
+  public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201302/UserListService";
 
   /**
    * Constructor using wsdl location and options array
@@ -3364,11 +3365,11 @@ class UserListService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Returns the list of user lists that meet the selector criteria.
-   * 
+   *
    * @param serviceSelector The selector specifying the {@link UserList}s to return.
    * @return A list of UserList entities which meet the selector criteria.
    * @throws ApiException if problems occurred while fetching UserList information.
@@ -3386,11 +3387,11 @@ class UserListService extends AdWordsSoapClient {
    * <span class="constraint NotEmpty">This field must contain at least one element.</span>
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
    * <span class="constraint SupportedOperators">The following {@link Operator}s are supported: ADD, SET.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Adds and updates user lists.
-   * 
+   *
    * <p class="note"><b>Note:</b> {@link UserListOperation} does not support the
    * <code>REMOVE</code> operator. To disable a user list, set its
    * {@link UserListMembershipStatus} to <code>CLOSED</code>.</p>
@@ -3406,4 +3407,3 @@ class UserListService extends AdWordsSoapClient {
 
 }}
 
-?>

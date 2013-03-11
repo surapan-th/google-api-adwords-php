@@ -35,9 +35,9 @@ if (!class_exists("Paging", FALSE)) {
  * Specifies the page of results to return in the response. A page is specified
  * by the result position to start at and the maximum number of results to
  * return.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -80,9 +80,9 @@ class Paging {
 if (!class_exists("SoapRequestHeader", FALSE)) {
 /**
  * Defines the required and optional elements within the header of a SOAP request.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -153,9 +153,9 @@ class SoapRequestHeader {
 if (!class_exists("SoapResponseHeader", FALSE)) {
 /**
  * Defines the elements within the header of a SOAP response.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -227,12 +227,12 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- * 
+ *
  * <p>The OGNL field path is provided for parsers to identify the request data
  * element that may have caused the error.</p>
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -321,9 +321,9 @@ class ApiError {
 if (!class_exists("ApplicationException", FALSE)) {
 /**
  * Base class for exceptions.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -398,9 +398,9 @@ class ApplicationException {
 if (!class_exists("Page", FALSE)) {
 /**
  * Contains the results from a get call.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -475,9 +475,9 @@ class Page {
 if (!class_exists("AuthenticationErrorReason", FALSE)) {
 /**
  * The single reason for the authentication failure.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -506,9 +506,9 @@ class AuthenticationErrorReason {
 if (!class_exists("AuthorizationErrorReason", FALSE)) {
 /**
  * The reasons for the database error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -538,9 +538,9 @@ if (!class_exists("ClientTermsErrorReason", FALSE)) {
 /**
  * Enums for the various reasons an error can be thrown as a result of
  * ClientTerms violation.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -569,9 +569,9 @@ class ClientTermsErrorReason {
 if (!class_exists("DatabaseErrorReason", FALSE)) {
 /**
  * The reasons for the database error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -600,9 +600,9 @@ class DatabaseErrorReason {
 if (!class_exists("DateErrorReason", FALSE)) {
 /**
  * The reasons for the target error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -631,9 +631,9 @@ class DateErrorReason {
 if (!class_exists("DistinctErrorReason", FALSE)) {
 /**
  * The reasons for the validation error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -662,9 +662,9 @@ class DistinctErrorReason {
 if (!class_exists("IdErrorReason", FALSE)) {
 /**
  * The reasons for the target error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -693,9 +693,9 @@ class IdErrorReason {
 if (!class_exists("InternalApiErrorReason", FALSE)) {
 /**
  * The single reason for the internal API error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -724,9 +724,9 @@ class InternalApiErrorReason {
 if (!class_exists("NotWhitelistedErrorReason", FALSE)) {
 /**
  * The single reason for the whitelist error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -756,9 +756,9 @@ if (!class_exists("QuotaCheckErrorReason", FALSE)) {
 /**
  * Enums for all the reasons an error can be thrown to the user during
  * billing quota checks.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -787,9 +787,9 @@ class QuotaCheckErrorReason {
 if (!class_exists("RangeErrorReason", FALSE)) {
 /**
  * The reasons for the target error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -818,9 +818,9 @@ class RangeErrorReason {
 if (!class_exists("RateExceededErrorReason", FALSE)) {
 /**
  * The reason for the rate exceeded error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -849,9 +849,9 @@ class RateExceededErrorReason {
 if (!class_exists("ReadOnlyErrorReason", FALSE)) {
 /**
  * The reasons for the target error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -880,9 +880,9 @@ class ReadOnlyErrorReason {
 if (!class_exists("RequestErrorReason", FALSE)) {
 /**
  * Error reason is unknown.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -911,9 +911,9 @@ class RequestErrorReason {
 if (!class_exists("RequiredErrorReason", FALSE)) {
 /**
  * The reasons for the target error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -942,9 +942,9 @@ class RequiredErrorReason {
 if (!class_exists("SizeLimitErrorReason", FALSE)) {
 /**
  * The reasons for Ad Scheduling errors.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -973,9 +973,9 @@ class SizeLimitErrorReason {
 if (!class_exists("StringLengthErrorReason", FALSE)) {
 /**
  * The reasons for the target error.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1444,11 +1444,11 @@ class TriggerTimeSpec {
 if (!class_exists("AlertServiceGet", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Gets the list of alerts matching the specified clients and time period.
- * 
+ *
  * @param selector selects the alerts for which to search.
  * @return a page of alerts.
  * @throws ApiException if an error occurs
@@ -1485,7 +1485,7 @@ class AlertServiceGet {
 
 if (!class_exists("AlertServiceGetResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
  */
@@ -1520,9 +1520,9 @@ class AlertServiceGetResponse {
 if (!class_exists("AuthenticationError", FALSE)) {
 /**
  * Errors returned when Authentication failed.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1563,9 +1563,9 @@ class AuthenticationError extends ApiError {
 if (!class_exists("AuthorizationError", FALSE)) {
 /**
  * Errors encountered when trying to authorize a user.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1606,9 +1606,9 @@ class AuthorizationError extends ApiError {
 if (!class_exists("ClientTermsError", FALSE)) {
 /**
  * Error due to user not accepting the AdWords terms of service.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1649,9 +1649,9 @@ class ClientTermsError extends ApiError {
 if (!class_exists("DateError", FALSE)) {
 /**
  * Errors associated with invalid dates and date ranges.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1692,9 +1692,9 @@ class DateError extends ApiError {
 if (!class_exists("DistinctError", FALSE)) {
 /**
  * Errors related to distinct ids or content.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1735,9 +1735,9 @@ class DistinctError extends ApiError {
 if (!class_exists("IdError", FALSE)) {
 /**
  * Errors associated with the ids.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1780,9 +1780,9 @@ if (!class_exists("InternalApiError", FALSE)) {
  * Indicates that a server-side error has occured. {@code InternalApiError}s
  * are generally not the result of an invalid request or message sent by the
  * client.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1823,9 +1823,9 @@ class InternalApiError extends ApiError {
 if (!class_exists("NotWhitelistedError", FALSE)) {
 /**
  * Indicates that the customer is not whitelisted for accessing the API.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1866,9 +1866,9 @@ class NotWhitelistedError extends ApiError {
 if (!class_exists("QuotaCheckError", FALSE)) {
 /**
  * Encapsulates the errors thrown during developer quota checks.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1909,9 +1909,9 @@ class QuotaCheckError extends ApiError {
 if (!class_exists("RangeError", FALSE)) {
 /**
  * A list of all errors associated with the Range constraint.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -1952,9 +1952,9 @@ class RangeError extends ApiError {
 if (!class_exists("RateExceededError", FALSE)) {
 /**
  * Signals that a call failed because a measured rate exceeded.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2016,9 +2016,9 @@ class RateExceededError extends ApiError {
 if (!class_exists("ReadOnlyError", FALSE)) {
 /**
  * Errors from attempting to write to read-only fields.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2060,9 +2060,9 @@ if (!class_exists("RequestError", FALSE)) {
 /**
  * Encapsulates the generic errors thrown when there's an error with user
  * request.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2103,9 +2103,9 @@ class RequestError extends ApiError {
 if (!class_exists("RequiredError", FALSE)) {
 /**
  * Errors due to missing required field.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2146,9 +2146,9 @@ class RequiredError extends ApiError {
 if (!class_exists("SizeLimitError", FALSE)) {
 /**
  * Indicates that the number of entries in the request or response exceeds the system limit.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2189,9 +2189,9 @@ class SizeLimitError extends ApiError {
 if (!class_exists("StringLengthError", FALSE)) {
 /**
  * A list of all errors associated with the @ContentsString constraint.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2232,9 +2232,9 @@ class StringLengthError extends ApiError {
 if (!class_exists("DatabaseError", FALSE)) {
 /**
  * Errors that are thrown due to a database access problem.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2275,9 +2275,9 @@ class DatabaseError extends ApiError {
 if (!class_exists("ApiException", FALSE)) {
 /**
  * Exception class for holding a list of service errors.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors returned when Authentication failed.
  * @package GoogleApiAdsAdWords
  * @subpackage v201302
@@ -2371,6 +2371,7 @@ class AlertService extends AdWordsSoapClient {
     "mutateResponse" => "AlertServiceMutateResponse",
     "DateTime" => "AdWordsDateTime",
     "SoapHeader" => "SoapRequestHeader",
+    "Function" => "FeedFunction",
     "AuthenticationError" => "AuthenticationError",
     "ApiError" => "ApiError",
     "AuthorizationError" => "AuthorizationError",
@@ -2430,7 +2431,7 @@ class AlertService extends AdWordsSoapClient {
    * The endpoint of the service
    * @var string
    */
-  public static $endpoint = "https://adwords-prod-west.qa.adz.google.com/api/adwords/mcm/v201302/AlertService";
+  public static $endpoint = "https://adwords.google.com/api/adwords/mcm/v201302/AlertService";
 
   /**
    * Constructor using wsdl location and options array
@@ -2444,11 +2445,11 @@ class AlertService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Gets the list of alerts matching the specified clients and time period.
-   * 
+   *
    * @param selector selects the alerts for which to search.
    * @return a page of alerts.
    * @throws ApiException if an error occurs
@@ -2462,4 +2463,3 @@ class AlertService extends AdWordsSoapClient {
 
 }}
 
-?>
