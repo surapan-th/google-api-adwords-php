@@ -28,12 +28,12 @@
  * @author     Adam Rogal <api.arogal@gmail.com>
  * @author     Eric Koleda <api.ekoleda@gmail.com>
  * @author     Vincent Tsao <api.vtsao@gmail.com>
+ * @author     Paul Matthews <api.pmatthews@gmail.com>
  * @see        AdsUser
  */
-
-/** Required classes. **/
-require_once dirname(__FILE__) . '/../../Common/Util/AuthToken.php';
 require_once dirname(__FILE__) . '/../../Common/Lib/AdsUser.php';
+require_once dirname(__FILE__) . '/../../Common/Util/ApiPropertiesUtils.php';
+require_once dirname(__FILE__) . '/../../Common/Util/AuthToken.php';
 require_once dirname(__FILE__) . '/../Util/ReportUtils.php';
 require_once 'AdWordsSoapClientFactory.php';
 require_once 'AdWordsConstants.php';
@@ -46,23 +46,18 @@ require_once 'AdWordsConstants.php';
  */
 class AdWordsUser extends AdsUser {
 
-  // TODO(api.vtsao): Eventually make all header names constants.
-  private static $USER_AGENT_HEADER_NAME = 'userAgent';
-
-  private static $LIB_VERSION = '4.1.0';
-  private static $LIB_NAME = 'AwApi-PHP';
-
   /**
-   * The default version that is loaded if the settings INI cannot be loaded.
-   * @var string default version of the API
+   * The name of the SOAP header that represents the user agent making API
+   * calls.
+   * @var string
    */
-  private static $DEFAULT_VERSION = 'v201302';
+  const USER_AGENT_HEADER_NAME = 'userAgent';
 
-  /**
-   * The default server that is loaded if the settings INI cannot be loaded.
-   * @var string default server of the API
-   */
-  private static $DEFAULT_SERVER = 'https://adwords.google.com';
+  private $libVersion;
+  private $libName;
+
+  private $defaultVersion;
+  private $defaultServer;
 
   private $email;
   private $password;
@@ -105,12 +100,27 @@ class AdWordsUser extends AdsUser {
    *     <var>NULL</var>, the default settings INI file will be loaded
    * @param string $authToken the authToken to use for requests
    * @param array $oauthInfo the OAuth information to use for requests
+   * @param array $oauth2Info the OAuth 2.0 information to use for requests
    */
   public function __construct($authenticationIniPath = NULL, $email = NULL,
       $password = NULL, $developerToken = NULL, $applicationToken = NULL,
       $userAgent = NULL, $clientId = NULL, $settingsIniPath = NULL,
       $authToken = NULL, $oauthInfo = NULL, $oauth2Info = NULL) {
     parent::__construct();
+
+    $buildIniCommon = parse_ini_file(dirname(__FILE__) .
+        '/../../Common/Lib/build.ini', FALSE);
+    $this->libVersion = $buildIniCommon['LIB_VERSION'];
+
+    $buildIniAw = parse_ini_file(dirname(__FILE__) . '/../Lib/build.ini',
+        FALSE);
+    $this->libName = $buildIniAw['LIB_NAME'];
+
+    $apiProps = ApiPropertiesUtils::ParseApiPropertiesFile(dirname(__FILE__) .
+        '/adwords-api.properties');
+    $versions = explode(',', $apiProps['api.versions']);
+    $this->defaultVersion = $versions[count($versions) - 1]; 
+    $this->defaultServer = $apiProps['api.server'];
 
     if (isset($authenticationIniPath)) {
       $authenticationIni =
@@ -128,8 +138,7 @@ class AdWordsUser extends AdsUser {
     $applicationToken = $this->GetAuthVarValue($applicationToken,
         'applicationToken', $authenticationIni);
     $userAgent = $this->GetAuthVarValue($userAgent,
-        AdWordsUser::$USER_AGENT_HEADER_NAME,
-        $authenticationIni);
+        self::USER_AGENT_HEADER_NAME, $authenticationIni);
     $clientId = $this->GetAuthVarValue($clientId, 'clientId',
         $authenticationIni);
     $clientId = $this->GetAuthVarValue($clientId, 'clientEmail',
@@ -159,8 +168,8 @@ class AdWordsUser extends AdsUser {
     }
 
     $this->LoadSettings($settingsIniPath,
-        AdWordsUser::$DEFAULT_VERSION,
-        AdWordsUser::$DEFAULT_SERVER,
+        $this->defaultVersion,
+        $this->defaultServer,
         getcwd(), dirname(__FILE__));
   }
 
@@ -371,14 +380,14 @@ class AdWordsUser extends AdsUser {
    * @see AdsUser::GetUserAgentHeaderName()
    */
   public function GetUserAgentHeaderName() {
-    return AdWordsUser::$USER_AGENT_HEADER_NAME;
+    return self::USER_AGENT_HEADER_NAME;
   }
 
   /**
    * @see AdsUser::GetClientLibraryNameAndVersion()
    */
   public function GetClientLibraryNameAndVersion() {
-    return array(AdWordsUser::$LIB_NAME, AdWordsUser::$LIB_VERSION);
+    return array($this->libName, $this->libVersion);
   }
 
   /**

@@ -22,7 +22,7 @@
  * @copyright  2012, Google Inc. All Rights Reserved.
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache License,
  *             Version 2.0
- * @author     Eric Koleda <adwordsapi-support@google.com>
+ * @author     Eric Koleda <api.ekoleda@gmail.com>
  */
 
 // Include the initialization file

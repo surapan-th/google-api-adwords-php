@@ -1,3 +1,12 @@
+4.2.1:
+- Fixed "cvc-elt" error with resolving Selector
+- Removed v201206 src
+- Removed v201206 AdWords and Adx examples
+- Improved examples dependency include (init.php)
+
+4.2.0:
+- Removed AndySmithOAuthHandler. Use PECL OAuth extension instead for OAuth 1.
+
 4.1.1:
 - Improved support of reporting for v201302.
 
@@ -78,7 +87,7 @@
 
 2.6.4:
 - Fixed long type conversion issue with 32-bit machines. (Issue #55)
-- Fixed 1.0a support in AndySmithOAuthHander.
+- Fixed 1.0a support in AndySmithOAuthHandler.
 - Replaced AdWordsUser Get*Service() methods with a single GetService() method.
   Backwards compatability maintained using __call(). All examples and tests
   updated to use the new method.

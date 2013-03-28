@@ -29,8 +29,8 @@
 // Set error reporting levels to highest
 error_reporting(E_STRICT | E_ALL);
 
-
-define('SRC_PATH', dirname(__FILE__) . '/../../../src/');
+$depth = '/../../';
+define('SRC_PATH', dirname(__FILE__) . $depth . 'src/');
 define('LIB_PATH', 'Google/Api/Ads/AdWords/Lib');
 define('UTIL_PATH', 'Google/Api/Ads/Common/Util');
 define('ADWORDS_UTIL_PATH', 'Google/Api/Ads/AdWords/Util');

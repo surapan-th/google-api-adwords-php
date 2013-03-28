@@ -1,10 +1,10 @@
 <?php
 /**
- * The common init file for all this example
+ * The common init file for all these examples
  *
  * PHP version 5
  *
- * Copyright 2012, Google Inc. All Rights Reserved.
+ * Copyright 2013, Google Inc. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,18 +19,18 @@
  * limitations under the License.
  *
  * @package    GoogleApiAdsAdWords
- * @subpackage v201206
+ * @subpackage v201302
  * @category   WebServices
- * @copyright  2012, Google Inc. All Rights Reserved.
+ * @copyright  2013, Google Inc. All Rights Reserved.
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache License,
  *             Version 2.0
- * @author     Paul Matthews <adwordsapi-support@google.com>
- * @author     Vincent Tsao <adwordsapi-support@google.com>
+ * @author     Paul Matthews <api.pmatthews@gmail.com>
  */
 // Set error reporting levels to highest
 error_reporting(E_STRICT | E_ALL);
 
-define('SRC_PATH', dirname(__FILE__) . '/../../../src/');
+$depth = '/../../../';
+define('SRC_PATH', dirname(__FILE__) . $depth . 'src/');
 define('LIB_PATH', 'Google/Api/Ads/AdWords/Lib');
 define('UTIL_PATH', 'Google/Api/Ads/Common/Util');
 define('ADWORDS_UTIL_PATH', 'Google/Api/Ads/AdWords/Util');

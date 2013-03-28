@@ -26,9 +26,9 @@
  * @copyright  2011, Google Inc. All Rights Reserved.
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache License,
  *             Version 2.0
- * @author     Adam Rogal <adwordsapi-support@google.com>
- * @author     Eric Koleda <adwordsapi-support@google.com>
- * @author     Vincent Tsao <adwordsapi-support@google.com>
+ * @author     Adam Rogal <api.arogal@gmail.com>
+ * @author     Eric Koleda <api.ekoleda@gmail.com>
+ * @author     Vincent Tsao <api.vtsao@gmail.com>
  */
 require_once 'Google/Api/Ads/Common/Lib/AdsUser.php';
 require_once 'Google/Api/Ads/Common/Util/Logger.php';
@@ -397,8 +397,11 @@ abstract class AdsSoapClient extends SoapClient {
       trigger_error('The minimum required version of this client library'
           . ' is 5.2.0.', E_USER_ERROR);
     }
-    $addXsiTypes =
-        version_compare(PHP_VERSION, '5.2.7', '<') || PHP_OS == 'Darwin';
+    if (version_compare(PHP_VERSION, '5.2.6', '<') ||
+        (PHP_OS == 'Darwin' && version_compare(PHP_VERSION, '5.3.0', '<'))) {
+      $addXsiTypes = TRUE;
+    }
+
     $removeEmptyElements = version_compare(PHP_VERSION, '5.2.3', '<');
     $replaceReferences = version_compare(PHP_VERSION, '5.2.2', '>=');
 

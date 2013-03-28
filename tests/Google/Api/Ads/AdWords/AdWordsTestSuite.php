@@ -39,7 +39,7 @@ require_once 'PHPUnit/Framework.php';
 /**
  * Test suite for AdWords API tests.
  *
- * @author eric.koleda@google.com
+ * @author api.ekoleda@gmail.com
  */
 class AdWordsTestSuite extends PHPUnit_Framework_TestSuite {
   /**
