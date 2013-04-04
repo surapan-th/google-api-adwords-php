@@ -41,7 +41,13 @@ class ApiPropertiesUtils {
    * @return array the parsed properties
    */
   public static function ParseApiPropertiesString($propsFileStr) {
-    return parse_ini_string(preg_replace("/#.*\n/", "", $propsFileStr));
+    $tmpName = tempnam(sys_get_temp_dir(), 'ini');
+    $tmpHandle = fopen($tmpName, 'w');
+    fwrite($tmpHandle, preg_replace("/#.*\n/", "", $propsFileStr));
+    fclose($tmpHandle);
+    $parsed = parse_ini_file($tmpName);
+    unlink($tmpName);
+    return $parsed;
   }
 }
 
