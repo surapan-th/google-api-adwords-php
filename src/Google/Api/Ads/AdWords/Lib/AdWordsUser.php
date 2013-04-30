@@ -25,10 +25,10 @@
  * @copyright  2011, Google Inc. All Rights Reserved.
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache License,
  *             Version 2.0
- * @author     Adam Rogal <api.arogal@gmail.com>
- * @author     Eric Koleda <api.ekoleda@gmail.com>
- * @author     Vincent Tsao <api.vtsao@gmail.com>
- * @author     Paul Matthews <api.pmatthews@gmail.com>
+ * @author     Adam Rogal
+ * @author     Eric Koleda
+ * @author     Vincent Tsao
+ * @author     Paul Matthews
  * @see        AdsUser
  */
 require_once dirname(__FILE__) . '/../../Common/Lib/AdsUser.php';
@@ -117,7 +117,7 @@ class AdWordsUser extends AdsUser {
     $this->libName = $buildIniAw['LIB_NAME'];
 
     $apiProps = ApiPropertiesUtils::ParseApiPropertiesFile(dirname(__FILE__) .
-        '/adwords-api.properties');
+        '/api.properties');
     $versions = explode(',', $apiProps['api.versions']);
     $this->defaultVersion = $versions[count($versions) - 1]; 
     $this->defaultServer = $apiProps['api.server'];

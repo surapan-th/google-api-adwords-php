@@ -17,7 +17,7 @@
  * @category   WebServices
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache License,
  *             Version 2.0
- * @author     Vincent Tsao <api.vtsao@gmail.com>
+ * @author     Vincent Tsao
  */
 
 /**
@@ -31,23 +31,7 @@ class ApiPropertiesUtils {
    * @return array the parsed properties
    */
   public static function ParseApiPropertiesFile($propsFilePath) {
-    return ApiPropertiesUtils::ParseApiPropertiesString(file_get_contents(
-        $propsFilePath));
-  }
-
-  /**
-   * Parses the specified API properties string.
-   * @param string $propsFileStr the API properties to parse as a string
-   * @return array the parsed properties
-   */
-  public static function ParseApiPropertiesString($propsFileStr) {
-    $tmpName = tempnam(sys_get_temp_dir(), 'ini');
-    $tmpHandle = fopen($tmpName, 'w');
-    fwrite($tmpHandle, preg_replace("/#.*\n/", "", $propsFileStr));
-    fclose($tmpHandle);
-    $parsed = parse_ini_file($tmpName);
-    unlink($tmpName);
-    return $parsed;
+    return parse_ini_file($propsFilePath);
   }
 }
 
