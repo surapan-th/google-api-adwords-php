@@ -1,3 +1,10 @@
+4.2.5:
+- Added example for upgrading legacy sitelinks.
+- Moved the SetCampaignEnhanced example to the Migration directory.
+
+4.2.4:
+- Added support and examples for AdGroupBidModifierService.
+
 4.2.3:
 - AdWords for Video API support and examples (beta feature).
 
