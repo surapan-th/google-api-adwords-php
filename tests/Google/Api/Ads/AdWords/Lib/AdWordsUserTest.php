@@ -26,6 +26,7 @@
 error_reporting(E_STRICT | E_ALL);
 
 require_once 'Google/Api/Ads/AdWords/Lib/AdWordsUser.php';
+require_once 'Google/Api/Ads/Common/Lib/ValidationException.php';
 
 /**
  * Unit tests for {@link AdWordsUser}.
@@ -61,6 +62,35 @@ class AdWordsUserTest extends PHPUnit_Framework_TestCase {
     );
 
     $this->assertRegExp($search, $user->GetClientLibraryUserAgent());
+  }
+
+  /**
+   * Tests that instantiating an AdWordsUser with an auth.ini file that has the
+   * key "clientId" will throw an exception.
+   *
+   * @expectedException ValidationException
+   * @covers AdWordsUser::__construct
+   */
+  public function testConstruct() {
+    $authIniFilePath = tempnam(sys_get_temp_dir(), 'auth.ini.');
+    $settingsIniFilePath = tempnam(sys_get_temp_dir(), 'settings.ini.');
+
+    $authIniFile = fopen($authIniFilePath, 'w');
+    fwrite($authIniFile, 'clientId = "12345678"');
+    fclose($authIniFile);
+
+    new AdWordsUser($authIniFilePath, NULL, NULL, NULL, NULL, NULL, NULL,
+        $settingsIniFilePath);
+  }
+
+  /**
+   * Get a settings filename
+   *
+   * @param $basename string the basename of the settings file
+   * @return string the corresponding filename
+   */
+  protected function getSettingsFileName($basename) {
+    return sprintf("%s/Data/%s", dirname(dirname(__FILE__)), $basename);
   }
 }
 

@@ -94,6 +94,10 @@ try {
 
   // Run the example.
   GetKeywordsExample($user, $adGroupId);
+} catch (OAuth2Exception $e) {
+  ExampleUtils::CheckForOAuth2Errors($e);
+} catch (ValidationException $e) {
+  ExampleUtils::CheckForOAuth2Errors($e);
 } catch (Exception $e) {
   printf("An error has occurred: %s\n", $e->getMessage());
 }

@@ -1,3 +1,19 @@
+4.3.0:
+- Removed support for OAuth 1. Use OAuth 2 instead.
+- OAuth 2 is now the preferred authentication method as ClientLogin is
+  deprecated. Warnings will be logged if ClientLogin is used.
+- The OAuth 2 example has been renamed to GetRefreshToken.php (previously
+  UseOAuth2.php) and will read OAuth 2 client ID and secret credentials from
+  the auth.ini file.
+- Access tokens are now automatically refreshed when they are close to
+  expiring (within 60 seconds) if a refreshable token has been provided. This
+  allows PHP scripts to be long lived without issues.
+- The authentication key "clientId" in auth.ini has been renamed to
+  "clientCustomerId".
+- Examples now capture OAuth2 errors and inform users how best to resolve
+    them.
+- Added support for AdWords for Video v201302.
+
 4.2.5:
 - Added example for upgrading legacy sitelinks.
 - Moved the SetCampaignEnhanced example to the Migration directory.

@@ -60,6 +60,10 @@ if (__FILE__ != realpath($_SERVER['PHP_SELF'])) {
 try {
   // Run the example.
   HandleTwoFactorAuthorizationErrorExample();
+} catch (OAuth2Exception $e) {
+  ExampleUtils::CheckForOAuth2Errors($e);
+} catch (ValidationException $e) {
+  ExampleUtils::CheckForOAuth2Errors($e);
 } catch (Exception $e) {
   printf("An error has occurred: %s\n", $e->getMessage());
 }
