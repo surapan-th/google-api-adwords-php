@@ -150,7 +150,7 @@ function GetExistingFeed(FeedMappingService $fmService) {
       if (!empty($textAttributeId) && !empty($urlAttributeId)) {
         return array(
           'feedId' => $feedId,
-          'textAtrributeId' => $textAttributeId,
+          'textAttributeId' => $textAttributeId,
           'urlAttributeId' => $urlAttributeId,
         );
       }
@@ -419,7 +419,7 @@ try {
   $user->LogAll();
 
   // Run the example.
-  AddSitelinksExample($user, $campaignId);
+  UpgradeLegacySitelinksExample($user, $campaignId);
 } catch (OAuth2Exception $e) {
   ExampleUtils::CheckForOAuth2Errors($e);
 } catch (ValidationException $e) {

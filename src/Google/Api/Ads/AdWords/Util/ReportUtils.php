@@ -299,11 +299,11 @@ class ReportUtils {
         $user->GetDefaultVersion();
     // Authorization.
     $authHeader = NULL;
-    $oAuth2Info = $this->user->GetOAuth2Info();
-    $oAuth2Handler = $this->user->GetOAuth2Handler();
+    $oAuth2Info = $user->GetOAuth2Info();
+    $oAuth2Handler = $user->GetOAuth2Handler();
     if (!empty($oAuth2Info)) {
       $oAuth2Info = $oAuth2Handler->GetOrRefreshAccessToken($oAuth2Info);
-      $this->user->SetOAuth2Info($oAuth2Info);
+      $user->SetOAuth2Info($oAuth2Info);
       $authHeader = $oAuth2Handler->FormatCredentialsForHeader($oAuth2Info);
     } else {
       $authHeader = sprintf(self::CLIENT_LOGIN_FORMAT, $user->GetAuthToken());

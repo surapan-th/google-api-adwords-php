@@ -1,3 +1,6 @@
+4.4.0:
+- Added support and examples for v201306.
+
 4.3.0:
 - Removed support for OAuth 1. Use OAuth 2 instead.
 - OAuth 2 is now the preferred authentication method as ClientLogin is

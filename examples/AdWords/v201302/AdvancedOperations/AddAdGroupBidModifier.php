@@ -73,7 +73,7 @@ function AddAdGroupBidModifierExample(AdWordsUser $user, $adGroupId,
     }
     printf(
       'AdGroup ID %d, Criterion ID %d was updated with ' .
-          'ad group level modifier: %s',
+          "ad group level modifier: %s\n",
       $modifier->adGroupId,
       $modifier->criterion->id,
       $value

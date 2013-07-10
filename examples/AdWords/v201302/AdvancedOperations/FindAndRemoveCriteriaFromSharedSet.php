@@ -168,7 +168,7 @@ function RemoveCriteriaFromSharedSet(AdWordsUser $user,
       $operation = new SharedCriterionOperation();
       $operation->operator = "REMOVE";
       $operation->operand = $sharedCriterion;
-      $opertaions[] = $operation;
+      $operations[] = $operation;
     }
   }
 
@@ -179,11 +179,11 @@ function RemoveCriteriaFromSharedSet(AdWordsUser $user,
     throw new RuntimeException("Unable to remove SharedCriterion.");
   }
 
-  foreach ($result->value as $operation) {
+  foreach ($result->value as $sharedCriterion) {
     printf("Deleted SharedCriterion with shared set ID \"%s\" and " .
         "criterion ID \"%s\"\n",
-        $operation->operand->sharedSetId,
-        $operation->operand->criterion->criterionId);
+        $sharedCriterion->sharedSetId,
+        $sharedCriterion->criterion->id);
   }
 }
 
