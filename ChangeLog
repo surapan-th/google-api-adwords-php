@@ -1,3 +1,8 @@
+4.5.0:
+- AdWords for Video API v201302 examples (beta feature).
+- Fixed Feed Function naming to FeedFunction (Issue #101).
+- Removed support for v201209.
+
 4.4.0:
 - Added support and examples for v201306.
 
