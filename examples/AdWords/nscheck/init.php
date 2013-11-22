@@ -1,6 +1,6 @@
 <?php
 /**
- * The common init file for all these examples
+ * The common init file for all this example
  *
  * PHP version 5
  *
@@ -19,7 +19,7 @@
  * limitations under the License.
  *
  * @package    GoogleApiAdsAdWords
- * @subpackage v201302
+ * @subpackage v201309
  * @category   WebServices
  * @copyright  2013, Google Inc. All Rights Reserved.
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache License,
@@ -35,7 +35,7 @@ define('LIB_PATH', 'Google/Api/Ads/AdWords/Lib');
 define('UTIL_PATH', 'Google/Api/Ads/Common/Util');
 define('ADWORDS_UTIL_PATH', 'Google/Api/Ads/AdWords/Util');
 
-define('ADWORDS_VERSION', 'v201302');
+define('ADWORDS_VERSION', 'v201309');
 
 // Configure include path
 ini_set('include_path', implode(array(
